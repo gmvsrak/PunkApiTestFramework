@@ -1,0 +1,168 @@
+[
+  {
+    "uri": "features/feature_files/punk_api/punk_api_pre_requisites.feature",
+    "id": "get-prerequisite-test-to-test-punk-api",
+    "keyword": "Feature",
+    "name": "Get Prerequisite Test to test Punk API",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "Send request to Punk Api",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "before": [
+          {
+            "output": [
+              "Able to get random beer}"
+            ],
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 248000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I send request to punk api V2",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/punk_api_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000726000
+            }
+          }
+        ]
+      },
+      {
+        "id": "get-prerequisite-test-to-test-punk-api;able-to-get-random-beer",
+        "keyword": "Scenario",
+        "name": "Able to get random beer",
+        "description": "",
+        "line": 19,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 18
+          },
+          {
+            "name": "@regression",
+            "line": 18
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "And ",
+            "name": "I retrieve random beer",
+            "line": 20,
+            "match": {
+              "location": "features/step_definitions/punk_api_steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 626965000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should get 200 responce",
+            "line": 21,
+            "output": [
+              "I FOUND THE RESPONSE CODE TO BE 200"
+            ],
+            "match": {
+              "location": "features/step_definitions/punk_api_steps.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2793000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I should get random beer data",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/punk_api_steps.rb:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 314000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I retrieve random beer",
+            "line": 23,
+            "match": {
+              "location": "features/step_definitions/punk_api_steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 629433000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should get 200 responce",
+            "line": 24,
+            "output": [
+              "I FOUND THE RESPONSE CODE TO BE 200"
+            ],
+            "match": {
+              "location": "features/step_definitions/punk_api_steps.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5259000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I should get other random beer data",
+            "line": 25,
+            "match": {
+              "location": "features/step_definitions/punk_api_steps.rb:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 248000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I compare random beers retrieved beers should be different",
+            "line": 26,
+            "match": {
+              "location": "features/step_definitions/punk_api_steps.rb:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 103000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

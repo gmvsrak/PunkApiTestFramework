@@ -1,0 +1,313 @@
+# Logfile created on 2019-09-22 22:53:35 +0530 by logger.rb/53141
+I, [2019-09-22T22:53:35.530801 #24263]  INFO -- : ==========
+I, [2019-09-22T22:53:35.530793 #24261]  INFO -- : ==========
+I, [2019-09-22T22:53:35.530790 #24259]  INFO -- : ==========
+I, [2019-09-22T22:53:35.530908 #24263]  INFO -- : Start running scenario: Able to get random beer
+I, [2019-09-22T22:53:35.530928 #24261]  INFO -- : Start running scenario: Able to get single beer
+I, [2019-09-22T22:53:35.530967 #24261]  INFO -- : 20190922-225335
+I, [2019-09-22T22:53:35.530961 #24263]  INFO -- : 20190922-225335
+I, [2019-09-22T22:53:35.530967 #24259]  INFO -- : Start running scenario: Able to Access Punk API
+I, [2019-09-22T22:53:35.531031 #24259]  INFO -- : 20190922-225335
+I, [2019-09-22T22:53:35.531014 #24264]  INFO -- : ==========
+I, [2019-09-22T22:53:35.531129 #24264]  INFO -- : Start running scenario: Get beers with empty parameters, Examples (#1)
+I, [2019-09-22T22:53:35.531166 #24264]  INFO -- : 20190922-225335
+I, [2019-09-22T22:53:37.531972 #24261]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T22:53:37.534438 #24261]  INFO -- : Path is /beers/1
+I, [2019-09-22T22:53:37.534502 #24261]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T22:53:37.534577 #24261]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers/1
+I, [2019-09-22T22:53:38.331740 #24261]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:38.336777 #24261]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:38.336885 #24261]  INFO -- : Response code : 200
+I, [2019-09-22T22:53:38.338221 #24261]  INFO -- : Finished running scenario: Able to get single beer
+I, [2019-09-22T22:53:38.338280 #24261]  INFO -- : ==========
+I, [2019-09-22T22:53:38.340721 #24261]  INFO -- : ==========
+I, [2019-09-22T22:53:38.340798 #24261]  INFO -- : Start running scenario: Should not be able to retrieve beers with invalid endpoint
+I, [2019-09-22T22:53:38.340834 #24261]  INFO -- : 20190922-225338
+I, [2019-09-22T22:53:38.531563 #24259]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T22:53:38.533585 #24259]  INFO -- : Path is /beers
+I, [2019-09-22T22:53:38.533640 #24259]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T22:53:38.533739 #24259]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers
+I, [2019-09-22T22:53:38.535640 #24264]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T22:53:38.537560 #24264]  INFO -- : Path is /beers
+I, [2019-09-22T22:53:38.537616 #24264]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T22:53:38.537696 #24264]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers?name=&hops=
+I, [2019-09-22T22:53:38.867528 #24259]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:38.870181 #24259]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:38.870229 #24259]  INFO -- : Response code : 200
+I, [2019-09-22T22:53:38.872945 #24259]  INFO -- : Finished running scenario: Able to Access Punk API
+I, [2019-09-22T22:53:38.872977 #24259]  INFO -- : ==========
+I, [2019-09-22T22:53:38.874319 #24259]  INFO -- : ==========
+I, [2019-09-22T22:53:38.874357 #24259]  INFO -- : Start running scenario: Should not be able to retrieve beers matching with invalid beer_name
+I, [2019-09-22T22:53:38.874395 #24259]  INFO -- : 20190922-225338
+I, [2019-09-22T22:53:39.258616 #24264]  INFO -- : I FOUND THE RESPONSE CODE TO BE 400
+I, [2019-09-22T22:53:39.261472 #24264]  INFO -- : Finished running scenario: Get beers with empty parameters, Examples (#1)
+I, [2019-09-22T22:53:39.261520 #24264]  INFO -- : ==========
+I, [2019-09-22T22:53:39.263534 #24264]  INFO -- : ==========
+I, [2019-09-22T22:53:39.263591 #24264]  INFO -- : Start running scenario: Able to retrieve beers before given date
+I, [2019-09-22T22:53:39.263615 #24264]  INFO -- : 20190922-225339
+I, [2019-09-22T22:53:39.534430 #24263]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T22:53:39.538483 #24263]  INFO -- : Path is /beers/random
+I, [2019-09-22T22:53:39.538639 #24263]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T22:53:39.538781 #24263]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers/random
+I, [2019-09-22T22:53:40.403017 #24263]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:40.407137 #24263]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:40.407215 #24263]  INFO -- : Response code : 200
+I, [2019-09-22T22:53:40.408264 #24263]  INFO -- : Path is /beers/random
+I, [2019-09-22T22:53:40.408310 #24263]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T22:53:40.408361 #24263]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers/random
+I, [2019-09-22T22:53:41.147867 #24263]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:41.149077 #24263]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:41.149130 #24263]  INFO -- : Response code : 200
+I, [2019-09-22T22:53:41.151139 #24263]  INFO -- : Finished running scenario: Able to get random beer
+I, [2019-09-22T22:53:41.151178 #24263]  INFO -- : ==========
+I, [2019-09-22T22:53:41.153733 #24263]  INFO -- : ==========
+I, [2019-09-22T22:53:41.153784 #24263]  INFO -- : Start running scenario: Should not be able to retrieve beers with empty food parameter
+I, [2019-09-22T22:53:41.153811 #24263]  INFO -- : 20190922-225341
+I, [2019-09-22T22:53:41.344116 #24261]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T22:53:41.345416 #24261]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T22:53:41.345495 #24261]  INFO -- : Requested URL is : https://api.punkapi.com/v2/ksjdh
+I, [2019-09-22T22:53:41.877463 #24259]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T22:53:41.883132 #24259]  INFO -- : Path is /beers
+I, [2019-09-22T22:53:41.883193 #24259]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T22:53:41.883238 #24259]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers?beer_name=rcylmgjb
+I, [2019-09-22T22:53:42.072082 #24261]  INFO -- : I FOUND THE RESPONSE CODE TO BE 404
+I, [2019-09-22T22:53:42.073148 #24261]  INFO -- : Finished running scenario: Should not be able to retrieve beers with invalid endpoint
+I, [2019-09-22T22:53:42.073195 #24261]  INFO -- : ==========
+I, [2019-09-22T22:53:42.074671 #24261]  INFO -- : ==========
+I, [2019-09-22T22:53:42.074707 #24261]  INFO -- : Start running scenario: Able to retrieve beers matching with yeast name
+I, [2019-09-22T22:53:42.074728 #24261]  INFO -- : 20190922-225342
+I, [2019-09-22T22:53:43.148054 #24259]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:43.149152 #24259]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:43.149202 #24259]  INFO -- : Response code : 200
+I, [2019-09-22T22:53:43.149967 #24259]  INFO -- : Finished running scenario: Should not be able to retrieve beers matching with invalid beer_name
+I, [2019-09-22T22:53:43.149999 #24259]  INFO -- : ==========
+I, [2019-09-22T22:53:43.151631 #24259]  INFO -- : ==========
+I, [2019-09-22T22:53:43.151695 #24259]  INFO -- : Start running scenario: Able to retrieve beers matching with beer_name
+I, [2019-09-22T22:53:43.151721 #24259]  INFO -- : 20190922-225343
+I, [2019-09-22T22:53:43.157399 #24263]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T22:53:43.163140 #24263]  INFO -- : Path is /beers
+I, [2019-09-22T22:53:43.163227 #24263]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T22:53:43.163300 #24263]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers?food=
+I, [2019-09-22T22:53:43.266739 #24264]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T22:53:43.268110 #24264]  INFO -- : Path is /beers
+I, [2019-09-22T22:53:43.268283 #24264]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T22:53:43.268345 #24264]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers?brewed_before=07-2015
+I, [2019-09-22T22:53:43.815516 #24263]  INFO -- : I FOUND THE RESPONSE CODE TO BE 400
+I, [2019-09-22T22:53:43.816341 #24263]  INFO -- : Finished running scenario: Should not be able to retrieve beers with empty food parameter
+I, [2019-09-22T22:53:43.816389 #24263]  INFO -- : ==========
+I, [2019-09-22T22:53:43.817998 #24263]  INFO -- : ==========
+I, [2019-09-22T22:53:43.818040 #24263]  INFO -- : Start running scenario: Able to retrieve beers matching with hops name
+I, [2019-09-22T22:53:43.818064 #24263]  INFO -- : 20190922-225343
+I, [2019-09-22T22:53:44.835734 #24264]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:44.836813 #24264]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:44.836864 #24264]  INFO -- : Response code : 200
+I, [2019-09-22T22:53:44.848699 #24264]  INFO -- : Finished running scenario: Able to retrieve beers before given date
+I, [2019-09-22T22:53:44.848764 #24264]  INFO -- : ==========
+I, [2019-09-22T22:53:44.850445 #24264]  INFO -- : ==========
+I, [2019-09-22T22:53:44.850483 #24264]  INFO -- : Start running scenario: Able to retrieve beers matching with given malt name
+I, [2019-09-22T22:53:44.850504 #24264]  INFO -- : 20190922-225344
+I, [2019-09-22T22:53:45.152307 #24259]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T22:53:45.153334 #24259]  INFO -- : Path is /beers
+I, [2019-09-22T22:53:45.153401 #24259]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T22:53:45.153485 #24259]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers?beer_name=Lizard_Bride_-_Prototype_Challenge
+I, [2019-09-22T22:53:45.682917 #24259]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:45.683948 #24259]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:45.684002 #24259]  INFO -- : Response code : 200
+I, [2019-09-22T22:53:45.684356 #24259]  INFO -- : Lizard Bride - Prototype Challenge is in match with Lizard Bride - Prototype Challenge
+I, [2019-09-22T22:53:45.685444 #24259]  INFO -- : Finished running scenario: Able to retrieve beers matching with beer_name
+I, [2019-09-22T22:53:45.685482 #24259]  INFO -- : ==========
+I, [2019-09-22T22:53:45.687460 #24259]  INFO -- : ==========
+I, [2019-09-22T22:53:45.687499 #24259]  INFO -- : Start running scenario: Able to retrieve beers after given date
+I, [2019-09-22T22:53:45.687522 #24259]  INFO -- : 20190922-225345
+I, [2019-09-22T22:53:45.821347 #24263]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T22:53:45.822127 #24263]  INFO -- : Path is /beers
+I, [2019-09-22T22:53:45.822171 #24263]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T22:53:45.822224 #24263]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers?hops=Centennial
+I, [2019-09-22T22:53:46.079829 #24261]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T22:53:46.080458 #24261]  INFO -- : Path is /beers
+I, [2019-09-22T22:53:46.080500 #24261]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T22:53:46.080551 #24261]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers?yeast=Wyeast_1056_-_American_Ale™
+I, [2019-09-22T22:53:46.365277 #24261]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:46.366598 #24261]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:46.366648 #24261]  INFO -- : Response code : 200
+I, [2019-09-22T22:53:46.370557 #24261]  INFO -- : Wyeast 1056 - American Ale™ is in match with Wyeast 1056 - American Ale™
+I, [2019-09-22T22:53:46.371700 #24261]  INFO -- : Finished running scenario: Able to retrieve beers matching with yeast name
+I, [2019-09-22T22:53:46.371745 #24261]  INFO -- : ==========
+I, [2019-09-22T22:53:46.372394 #24263]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:46.373471 #24263]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:46.373519 #24263]  INFO -- : Response code : 200
+I, [2019-09-22T22:53:46.373742 #24261]  INFO -- : ==========
+I, [2019-09-22T22:53:46.373785 #24261]  INFO -- : Start running scenario: Able to retrieve beers before current date
+I, [2019-09-22T22:53:46.373812 #24261]  INFO -- : 20190922-225346
+I, [2019-09-22T22:53:46.377952 #24263]  INFO -- : ["Centennial", "Amarillo", "Centennial", "Amarillo", "Centennial", "Amarillo"] is in match with Centennial
+I, [2019-09-22T22:53:46.379031 #24263]  INFO -- : Finished running scenario: Able to retrieve beers matching with hops name
+I, [2019-09-22T22:53:46.379064 #24263]  INFO -- : ==========
+I, [2019-09-22T22:53:46.380930 #24263]  INFO -- : ==========
+I, [2019-09-22T22:53:46.380973 #24263]  INFO -- : Start running scenario: Able to retrieve beers matching with given food name
+I, [2019-09-22T22:53:46.381000 #24263]  INFO -- : 20190922-225346
+I, [2019-09-22T22:53:47.852491 #24264]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T22:53:47.853305 #24264]  INFO -- : Path is /beers
+I, [2019-09-22T22:53:47.853380 #24264]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T22:53:47.853479 #24264]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers?malt=Carared
+I, [2019-09-22T22:53:48.311829 #24264]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:48.312808 #24264]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:48.312848 #24264]  INFO -- : Response code : 200
+I, [2019-09-22T22:53:48.313605 #24264]  INFO -- : ["Pale Ale", "Munich", "Dextrin Malt", "Carared"] is in match with Carared
+I, [2019-09-22T22:53:48.314479 #24264]  INFO -- : Finished running scenario: Able to retrieve beers matching with given malt name
+I, [2019-09-22T22:53:48.314518 #24264]  INFO -- : ==========
+I, [2019-09-22T22:53:48.317217 #24264]  INFO -- : ==========
+I, [2019-09-22T22:53:48.317269 #24264]  INFO -- : Start running scenario: Get beers with given 2 parameters, Examples (#3)
+I, [2019-09-22T22:53:48.317295 #24264]  INFO -- : 20190922-225348
+I, [2019-09-22T22:53:48.377482 #24261]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T22:53:48.378897 #24261]  INFO -- : Path is /beers
+I, [2019-09-22T22:53:48.378949 #24261]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T22:53:48.379017 #24261]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers?=09-2019
+I, [2019-09-22T22:53:49.088706 #24261]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:49.089725 #24261]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:49.089766 #24261]  INFO -- : Response code : 200
+I, [2019-09-22T22:53:49.094822 #24261]  INFO -- : Finished running scenario: Able to retrieve beers before current date
+I, [2019-09-22T22:53:49.094855 #24261]  INFO -- : ==========
+I, [2019-09-22T22:53:49.097066 #24261]  INFO -- : ==========
+I, [2019-09-22T22:53:49.097142 #24261]  INFO -- : Start running scenario: Get beers with given 2 parameters, Examples (#1)
+I, [2019-09-22T22:53:49.097172 #24261]  INFO -- : 20190922-225349
+I, [2019-09-22T22:53:49.689049 #24259]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T22:53:49.689882 #24259]  INFO -- : Path is /beers
+I, [2019-09-22T22:53:49.689931 #24259]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T22:53:49.689981 #24259]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers?brewed_after=07-2015
+I, [2019-09-22T22:53:50.246064 #24259]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:50.247029 #24259]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:50.247066 #24259]  INFO -- : Response code : 200
+I, [2019-09-22T22:53:50.252407 #24259]  INFO -- : Finished running scenario: Able to retrieve beers after given date
+I, [2019-09-22T22:53:50.252435 #24259]  INFO -- : ==========
+I, [2019-09-22T22:53:50.253825 #24259]  INFO -- : ==========
+I, [2019-09-22T22:53:50.253858 #24259]  INFO -- : Start running scenario: Able to retrieve beer with matching ID
+I, [2019-09-22T22:53:50.253881 #24259]  INFO -- : 20190922-225350
+I, [2019-09-22T22:53:50.382511 #24263]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T22:53:50.383376 #24263]  INFO -- : Path is /beers
+I, [2019-09-22T22:53:50.383437 #24263]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T22:53:50.383507 #24263]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers?food=Roasted_pumpkin_and_mozzarella
+I, [2019-09-22T22:53:51.027396 #24263]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:51.028294 #24263]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:51.028332 #24263]  INFO -- : Response code : 200
+I, [2019-09-22T22:53:51.028538 #24263]  INFO -- : ["Roasted pumpkin and mozzarella", "Black forrest gateaux"] is in match with Roasted pumpkin and mozzarella
+I, [2019-09-22T22:53:51.029391 #24263]  INFO -- : Finished running scenario: Able to retrieve beers matching with given food name
+I, [2019-09-22T22:53:51.029422 #24263]  INFO -- : ==========
+I, [2019-09-22T22:53:51.031399 #24263]  INFO -- : ==========
+I, [2019-09-22T22:53:51.031445 #24263]  INFO -- : Start running scenario: Get beers with given 2 parameters, Examples (#2)
+I, [2019-09-22T22:53:51.031476 #24263]  INFO -- : 20190922-225351
+I, [2019-09-22T22:53:51.099883 #24261]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T22:53:51.100723 #24261]  INFO -- : Path is /beers
+I, [2019-09-22T22:53:51.100777 #24261]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T22:53:51.100844 #24261]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers?beer_name=Lizard_Bride_-_Prototype_Challenge&hops=Citra
+I, [2019-09-22T22:53:51.318999 #24264]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T22:53:51.319934 #24264]  INFO -- : Path is /beers
+I, [2019-09-22T22:53:51.319994 #24264]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T22:53:51.320065 #24264]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers?ids=143&yeast=Wyeast_1056_-_American_Ale™
+I, [2019-09-22T22:53:52.015665 #24264]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:52.016384 #24264]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:52.016434 #24264]  INFO -- : Response code : 200
+I, [2019-09-22T22:53:52.016718 #24264]  INFO -- : ["143", "Wyeast 1056 - American Ale™"] is in match with ["143", "Wyeast 1056 - American Ale™"]
+I, [2019-09-22T22:53:52.017304 #24264]  INFO -- : Finished running scenario: Get beers with given 2 parameters, Examples (#3)
+I, [2019-09-22T22:53:52.017345 #24264]  INFO -- : ==========
+I, [2019-09-22T22:53:52.020100 #24264]  INFO -- : ==========
+I, [2019-09-22T22:53:52.020186 #24264]  INFO -- : Start running scenario: Generate random test data
+I, [2019-09-22T22:53:52.020224 #24264]  INFO -- : 20190922-225352
+I, [2019-09-22T22:53:52.113161 #24261]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:52.113784 #24261]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:52.113831 #24261]  INFO -- : Response code : 200
+I, [2019-09-22T22:53:52.114084 #24261]  INFO -- : ["Lizard Bride - Prototype Challenge", "Citra", "Challenger", "Centennial", "Citra", "Citra", "Mosaic", "Bramling Cross", "Centennial", "Citra", "Bramling Cross", "Mosaic", "Nelson Sauvin", "Simcoe"] is in match with ["Lizard Bride - Prototype Challenge", "Citra"]
+I, [2019-09-22T22:53:52.114589 #24261]  INFO -- : Finished running scenario: Get beers with given 2 parameters, Examples (#1)
+I, [2019-09-22T22:53:52.114624 #24261]  INFO -- : ==========
+I, [2019-09-22T22:53:52.116682 #24261]  INFO -- : ==========
+I, [2019-09-22T22:53:52.116726 #24261]  INFO -- : Start running scenario: Get beers with given 3 parameters, Examples (#2)
+I, [2019-09-22T22:53:52.116755 #24261]  INFO -- : 20190922-225352
+I, [2019-09-22T22:53:52.257902 #24259]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T22:53:52.258859 #24259]  INFO -- : Path is /beers
+I, [2019-09-22T22:53:52.258924 #24259]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T22:53:52.259004 #24259]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers?ids=143
+I, [2019-09-22T22:53:52.952228 #24259]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:52.953078 #24259]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:52.953124 #24259]  INFO -- : Response code : 200
+I, [2019-09-22T22:53:52.953316 #24259]  INFO -- : 143 is in match with 143
+I, [2019-09-22T22:53:52.954210 #24259]  INFO -- : Finished running scenario: Able to retrieve beer with matching ID
+I, [2019-09-22T22:53:52.954289 #24259]  INFO -- : ==========
+I, [2019-09-22T22:53:52.956790 #24259]  INFO -- : ==========
+I, [2019-09-22T22:53:52.956837 #24259]  INFO -- : Start running scenario: Get beers with given 3 parameters, Examples (#1)
+I, [2019-09-22T22:53:52.956868 #24259]  INFO -- : 20190922-225352
+I, [2019-09-22T22:53:54.032759 #24263]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T22:53:54.033694 #24263]  INFO -- : Path is /beers
+I, [2019-09-22T22:53:54.033749 #24263]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T22:53:54.033813 #24263]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers?beer_name=Lizard_Bride_-_Prototype_Challenge&yeast=Wyeast_1056_-_American_Ale™
+I, [2019-09-22T22:53:54.618410 #24263]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:54.619150 #24263]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:54.619198 #24263]  INFO -- : Response code : 200
+I, [2019-09-22T22:53:54.619474 #24263]  INFO -- : ["Lizard Bride - Prototype Challenge", "Wyeast 1056 - American Ale™"] is in match with ["Lizard Bride - Prototype Challenge", "Wyeast 1056 - American Ale™"]
+I, [2019-09-22T22:53:54.620182 #24263]  INFO -- : Finished running scenario: Get beers with given 2 parameters, Examples (#2)
+I, [2019-09-22T22:53:54.620248 #24263]  INFO -- : ==========
+I, [2019-09-22T22:53:54.623362 #24263]  INFO -- : ==========
+I, [2019-09-22T22:53:54.623438 #24263]  INFO -- : Start running scenario: Get beers with given 3 parameters, Examples (#3)
+I, [2019-09-22T22:53:54.623468 #24263]  INFO -- : 20190922-225354
+I, [2019-09-22T22:53:55.958975 #24259]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T22:53:55.959981 #24259]  INFO -- : Path is /beers
+I, [2019-09-22T22:53:55.960091 #24259]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T22:53:55.960147 #24259]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers?beer_name=Lizard_Bride_-_Prototype_Challenge&hops=Citra&yeast=Wyeast_1056_-_American_Ale™
+I, [2019-09-22T22:53:56.022618 #24264]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T22:53:56.023602 #24264]  INFO -- : Path is /beers/random
+I, [2019-09-22T22:53:56.023667 #24264]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T22:53:56.023747 #24264]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers/random
+I, [2019-09-22T22:53:56.118040 #24261]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T22:53:56.119076 #24261]  INFO -- : Path is /beers
+I, [2019-09-22T22:53:56.119140 #24261]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T22:53:56.119212 #24261]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers?malt=Extra_Pale&hops=Simcoe&yeast=Wyeast_1056_-_American_Ale™
+I, [2019-09-22T22:53:56.500511 #24264]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:56.500600 #24264]  INFO -- : Response code : 200
+I, [2019-09-22T22:53:56.501489 #24259]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:56.502305 #24259]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:56.502354 #24259]  INFO -- : Response code : 200
+I, [2019-09-22T22:53:56.502849 #24259]  INFO -- : ["Lizard Bride - Prototype Challenge", "Citra", "Challenger", "Centennial", "Citra", "Citra", "Mosaic", "Bramling Cross", "Centennial", "Citra", "Bramling Cross", "Mosaic", "Nelson Sauvin", "Simcoe", "Wyeast 1056 - American Ale™"] is in match with ["Lizard Bride - Prototype Challenge", "Citra", "Wyeast 1056 - American Ale™"]
+I, [2019-09-22T22:53:56.503735 #24259]  INFO -- : Finished running scenario: Get beers with given 3 parameters, Examples (#1)
+I, [2019-09-22T22:53:56.503794 #24259]  INFO -- : ==========
+I, [2019-09-22T22:53:56.506955 #24264]  INFO -- : Finished running scenario: Generate random test data
+I, [2019-09-22T22:53:56.506994 #24264]  INFO -- : ==========
+I, [2019-09-22T22:53:56.507245 #24259]  INFO -- : ==========
+I, [2019-09-22T22:53:56.507288 #24259]  INFO -- : Start running scenario: Get beers with given 4 parameters, Examples (#2)
+I, [2019-09-22T22:53:56.507314 #24259]  INFO -- : 20190922-225356
+I, [2019-09-22T22:53:56.508749 #24264]  INFO -- : ==========
+I, [2019-09-22T22:53:56.508788 #24264]  INFO -- : Start running scenario: Get beers with given 4 parameters, Examples (#1)
+I, [2019-09-22T22:53:56.508812 #24264]  INFO -- : 20190922-225356
+I, [2019-09-22T22:53:56.619831 #24261]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:56.620675 #24261]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:56.620717 #24261]  INFO -- : Response code : 200
+I, [2019-09-22T22:53:56.625539 #24261]  INFO -- : ["Extra Pale", "Carared", "Citra", "Challenger", "Centennial", "Citra", "Citra", "Mosaic", "Bramling Cross", "Centennial", "Citra", "Bramling Cross", "Mosaic", "Nelson Sauvin", "Simcoe", "Wyeast 1056 - American Ale™"] is in match with ["Extra Pale", "Simcoe", "Wyeast 1056 - American Ale™"]
+I, [2019-09-22T22:53:56.626511 #24261]  INFO -- : Finished running scenario: Get beers with given 3 parameters, Examples (#2)
+I, [2019-09-22T22:53:56.626575 #24261]  INFO -- : ==========
+I, [2019-09-22T22:53:58.628907 #24263]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T22:53:58.629804 #24263]  INFO -- : Path is /beers
+I, [2019-09-22T22:53:58.629857 #24263]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T22:53:58.630002 #24263]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers?ids=143&beer_name=Lizard_Bride_-_Prototype_Challenge&malt=Carared
+I, [2019-09-22T22:53:59.094207 #24263]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:59.095205 #24263]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:59.095284 #24263]  INFO -- : Response code : 200
+I, [2019-09-22T22:53:59.095684 #24263]  INFO -- : ["143", "Lizard Bride - Prototype Challenge", "Extra Pale", "Carared"] is in match with ["143", "Lizard Bride - Prototype Challenge", "Carared"]
+I, [2019-09-22T22:53:59.096746 #24263]  INFO -- : Finished running scenario: Get beers with given 3 parameters, Examples (#3)
+I, [2019-09-22T22:53:59.096808 #24263]  INFO -- : ==========
+I, [2019-09-22T22:53:59.511782 #24259]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T22:53:59.511780 #24264]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T22:53:59.512713 #24264]  INFO -- : Path is /beers
+I, [2019-09-22T22:53:59.512782 #24264]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T22:53:59.512869 #24264]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers?beer_name=Lizard_Bride_-_Prototype_Challenge&hops=Bramling_Cross&yeast=Wyeast_1056_-_American_Ale™&malt=Extra_Pale
+I, [2019-09-22T22:53:59.514099 #24259]  INFO -- : Path is /beers
+I, [2019-09-22T22:53:59.514175 #24259]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T22:53:59.514251 #24259]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers?malt=Extra_Pale&hops=Centennial&yeast=Wyeast_1056_-_American_Ale™&ids=143
+I, [2019-09-22T22:53:59.966933 #24264]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:59.967931 #24264]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:59.967993 #24264]  INFO -- : Response code : 200
+I, [2019-09-22T22:53:59.968622 #24264]  INFO -- : ["Lizard Bride - Prototype Challenge", "Citra", "Challenger", "Centennial", "Citra", "Citra", "Mosaic", "Bramling Cross", "Centennial", "Citra", "Bramling Cross", "Mosaic", "Nelson Sauvin", "Simcoe", "Wyeast 1056 - American Ale™", "Extra Pale", "Carared"] is in match with ["Lizard Bride - Prototype Challenge", "Bramling Cross", "Wyeast 1056 - American Ale™", "Extra Pale"]
+I, [2019-09-22T22:53:59.969593 #24264]  INFO -- : Finished running scenario: Get beers with given 4 parameters, Examples (#1)
+I, [2019-09-22T22:53:59.969653 #24264]  INFO -- : ==========
+I, [2019-09-22T22:53:59.972672 #24259]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:59.973541 #24259]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:53:59.973585 #24259]  INFO -- : Response code : 200
+I, [2019-09-22T22:53:59.973968 #24259]  INFO -- : ["Extra Pale", "Carared", "Citra", "Challenger", "Centennial", "Citra", "Citra", "Mosaic", "Bramling Cross", "Centennial", "Citra", "Bramling Cross", "Mosaic", "Nelson Sauvin", "Simcoe", "Wyeast 1056 - American Ale™", "143"] is in match with ["Extra Pale", "Centennial", "Wyeast 1056 - American Ale™", "143"]
+I, [2019-09-22T22:53:59.974873 #24259]  INFO -- : Finished running scenario: Get beers with given 4 parameters, Examples (#2)
+I, [2019-09-22T22:53:59.974914 #24259]  INFO -- : ==========

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>overview,features,scenarios,errors</title><link rel="icon" href="http://reportbuilder.rajatthareja.com/rb.ico">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection"/>
+<link href="https://cdn.rawgit.com/rajatthareja/ReportBuilder/v1.6/css/report.builder.min.css" rel="stylesheet">
+</head><body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script><header class="brown lighten-5">
+<div class="row brown lighten-1">
+<div class="col m6 hide-on-small-only">
+<h5 class="truncate white-text tooltipped" data-tooltip="overview,features,scenarios,errors">overview,features,scenarios,errors</h5>
+</div><div class="col m6 s12 brown lighten-1">
+<ul class="tabs brown lighten-1 row" style="overflow-x: hidden">
+<li class="tab col s3">
+<a class="brown lighten-3 active blue-text waves-effect waves-light tooltipped" data-tooltip="Results Overview" href="#overview"><i class="material-icons">assessment</i> Overview</a>
+</li>
+<li class="tab col s3">
+<a class="brown lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Scenarios by Features" href="#features"><i class="material-icons">view_headline</i> Features</a>
+</li>
+<li class="tab col s3">
+<a class="brown lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Scenarios Summary Table" href="#summary"><i class="material-icons">view_comfy</i> Summary</a>
+</li>
+<li class="tab col s3">
+<a class="brown lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Failed Scenarios" href="#errors"><i class="material-icons">bug_report</i> Errors</a>
+</li>
+</ul>
+</div>
+</div>
+</header>
+<div id="g0f0s0" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@smoke</div><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><h5>Able to Access Punk API (3.276s)</h5>
+features/feature_files/punk_api/punk_api_pre_requisites.feature:7<pre>Able to Access Punk API}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (3.001s)</li>
+<li class="collection-item step passed">
+<b>And </b> I retrieve beers (0.270s)</li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 200 responce (0.002s)<pre>I FOUND THE RESPONSE CODE TO BE 200</pre></li>
+<li class="collection-item step passed">
+<b>And </b> I should have list of beers (0.002s)<pre>1</pre></li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s1" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@smoke</div><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><h5>Able to get random beer (4.266s)</h5>
+features/feature_files/punk_api/punk_api_pre_requisites.feature:19<pre>Able to get random beer}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (3.001s)</li>
+<li class="collection-item step passed">
+<b>And </b> I retrieve random beer (0.627s)</li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 200 responce (0.003s)<pre>I FOUND THE RESPONSE CODE TO BE 200</pre></li>
+<li class="collection-item step passed">
+<b>And </b> I should get random beer data (0.000s)</li>
+<li class="collection-item step passed">
+<b>When </b> I retrieve random beer (0.629s)</li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 200 responce (0.005s)<pre>I FOUND THE RESPONSE CODE TO BE 200</pre></li>
+<li class="collection-item step passed">
+<b>And </b> I should get other random beer data (0.000s)</li>
+<li class="collection-item step passed">
+<b>Then </b> I compare random beers retrieved beers should be different (0.000s)</li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s2" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@smoke</div><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><h5>Able to get single beer (2.261s)</h5>
+features/feature_files/punk_api/punk_api_pre_requisites.feature:13<pre>Able to get single beer}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (2.001s)</li>
+<li class="collection-item step passed">
+<b>And </b> I retrieve single beer (0.256s)</li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 200 responce (0.003s)<pre>I FOUND THE RESPONSE CODE TO BE 200</pre></li>
+<li class="collection-item step passed">
+<b>And </b> I should get 1 beer (0.000s)<pre>1</pre></li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f1s0" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><div class="chip"><i class="material-icons rotate-45">label</i>@smoke</div><h5>Able to retrieve beers matching with beer_name (2.712s)</h5>
+features/feature_files/punk_api/punk_api_test.feature:13<pre>Able to retrieve beers matching with beer_name}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (2.000s)</li>
+<li class="collection-item step passed">
+<b>When </b> I retrieve beers with a given beer_name (0.710s)<pre> Searched for expected data - Sidewalk_Shark </pre></li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 200 responce (0.000s)<pre>I FOUND THE RESPONSE CODE TO BE 200</pre></li>
+<li class="collection-item step passed">
+<b>And </b> The retrieved beers should match with provided beer_name (0.000s)<pre>Sidewalk Shark is in match with Sidewalk Shark</pre></li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function () {$('#g0f0s0').modal();$('#g0f0s1').modal();$('#g0f0s2').modal();$('#g0f0s3').modal();$('#g0f1s0').modal();$('#g0f1s1').modal();});
+</script>
+<main class="brown lighten-5">
+<div class="row"><div id="overview" class="col s12 brown lighten-5">
+<div class="row">
+<div class="col m4 s12">
+<canvas id="featuresDoughnut" width="400" height="400"></canvas>
+<table id="metaDataFeatures" class="bordered">
+<tbody></tbody>
+</table>
+</div><div class="col m4 s12">
+<canvas id="scenariosDoughnut" width="400" height="400"></canvas>
+<table id="metaDataScenarios" class="bordered">
+<tbody></tbody>
+</table>
+</div><div class="col m4 s12">
+<table id="metaData" class="bordered">
+<tbody>
+<tr><th>Total Time</th><td>12.515s</td></tr></tbody>
+</table>
+</div>
+</div></div><div id="features" class="col s12 brown lighten-5 white-text">
+<ul class="featureList collapsible popout" data-collapsible="expandable">
+<li class="feature working">
+<div class="collapsible-header brown lighten-1 waves-effect waves-light">
+<i class="material-icons">featured_play_list</i>
+<b>Feature</b>&nbsp;Get Prerequisite Test to test Punk API&nbsp;(9.803s)
+</div><div class="collapsible-body brown lighten-4">
+<ul class="collection scenarioList"><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s0">
+<b>Scenario</b> Able to Access Punk API&nbsp;(3.276s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s1">
+<b>Scenario</b> Able to get random beer&nbsp;(4.266s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s2">
+<b>Scenario</b> Able to get single beer&nbsp;(2.261s)
+</a>
+</li></ul>
+</div>
+</li><li class="feature working">
+<div class="collapsible-header brown lighten-1 waves-effect waves-light">
+<i class="material-icons">featured_play_list</i>
+<b>Feature</b>&nbsp;Regression Test to test Punk API&nbsp;(2.712s)
+</div><div class="collapsible-body brown lighten-4">
+<ul class="collection scenarioList"><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f1s0">
+<b>Scenario</b> Able to retrieve beers matching with beer_name&nbsp;(2.712s)
+</a>
+</li></ul>
+</div>
+</li>
+</ul></div><div id="summary" class="col s12 brown lighten-5">
+<table id="summaryTable" class="bordered brown lighten-1 white-text" width="100%">
+<thead>
+<tr>
+<th class="hide-on-small-only">Feature</th>
+<th>Scenario</th>
+<th class="hide">Tags</th>
+<th>Status</th>
+<th class="hide-on-small-only">Error</th>
+</tr>
+</thead>
+<tbody><tr class="passed">
+<td class="hide-on-small-only">
+Get Prerequisite Test to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s0">Able to Access Punk API</a>
+</td><td class="hide">
+@smoke. @regression. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Get Prerequisite Test to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s1">Able to get random beer</a>
+</td><td class="hide">
+@smoke. @regression. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Get Prerequisite Test to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s2">Able to get single beer</a>
+</td><td class="hide">
+@smoke. @regression. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Regression Test to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f1s0">Able to retrieve beers matching with beer_name</a>
+</td><td class="hide">
+@regression. @smoke. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+</tbody>
+</table></div><div id="errors" class="col s12 brown lighten-5">
+<ul class="errorList collapsible popout" data-collapsible="expandable"></ul></div>
+</div>
+</main><footer class="page-footer brown lighten-4">
+<div class="footer-copyright brown lighten-1">
+<div class="container">
+Happy Reporting!
+<a class="white-text text-lighten-4 right" href="http://reportbuilder.rajatthareja.com">Generated by Report Builder</a>
+</div>
+</div>
+</footer><script type="text/javascript" src="https://cdn.rawgit.com/rajatthareja/ReportBuilder/v1.6/js/report.builder.min.js"></script></body>
+</html>

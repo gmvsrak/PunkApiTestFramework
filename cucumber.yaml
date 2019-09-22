@@ -1,0 +1,6 @@
+---
+default: "-f pretty --retry 2 -c -t ~@wip"
+html_report: "-f html -o test_report.html -f json -o report.json"
+parallel_report: "-f json -o results/punk_api/result<%=ENV['TEST_ENV_NUMBER']%>.json -f html -o results/punk_api/report<%=ENV['TEST_ENV_NUMBER']%>.html  -f junit -o results/parallel/junit -f pretty --retry 2 -c"
+regression_profile: "-t @regression -p parallel_report"
+smoke_profile: "-t @smoke -p parallel_report"

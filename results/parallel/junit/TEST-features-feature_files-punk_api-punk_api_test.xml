@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="0" errors="0" skipped="0" tests="1" time="2.792296" name="Regression Test to test Punk API">
+<testcase classname="Regression Test to test Punk API" name="Able to retrieve beers matching with beer_name" time="2.792296">
+  <system-out>
+    <![CDATA[  #################################################################################################### 
+  URL - https://api.punkapi.com/v2/beers?beer_name=Sidewalk_Shark 
+  HEADERS - 
+  #################################################################################################### 
+]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+</testsuite>

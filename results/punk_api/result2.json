@@ -1,0 +1,120 @@
+[
+  {
+    "uri": "features/feature_files/punk_api/punk_api_pre_requisites.feature",
+    "id": "get-prerequisite-test-to-test-punk-api",
+    "keyword": "Feature",
+    "name": "Get Prerequisite Test to test Punk API",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "Send request to Punk Api",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "before": [
+          {
+            "output": [
+              "Able to get single beer}"
+            ],
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 289000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I send request to punk api V2",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/punk_api_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2001102000
+            }
+          }
+        ]
+      },
+      {
+        "id": "get-prerequisite-test-to-test-punk-api;able-to-get-single-beer",
+        "keyword": "Scenario",
+        "name": "Able to get single beer",
+        "description": "",
+        "line": 13,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 12
+          },
+          {
+            "name": "@regression",
+            "line": 12
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "And ",
+            "name": "I retrieve single beer",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/punk_api_steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 256205000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should get 200 responce",
+            "line": 15,
+            "output": [
+              "I FOUND THE RESPONSE CODE TO BE 200"
+            ],
+            "match": {
+              "location": "features/step_definitions/punk_api_steps.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2774000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I should get 1 beer",
+            "line": 16,
+            "output": [
+              "1"
+            ],
+            "match": {
+              "location": "features/step_definitions/punk_api_steps.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 403000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 153000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

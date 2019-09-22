@@ -1,0 +1,14 @@
+# Logfile created on 2019-09-22 22:57:40 +0530 by logger.rb/53141
+I, [2019-09-22T22:57:40.622785 #24396]  INFO -- : ==========
+I, [2019-09-22T22:57:40.622875 #24396]  INFO -- : Start running scenario: Able to retrieve beers matching with beer_name
+I, [2019-09-22T22:57:40.622902 #24396]  INFO -- : 20190922-225740
+I, [2019-09-22T22:57:44.628176 #24396]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T22:57:44.630726 #24396]  INFO -- : Path is /beers
+I, [2019-09-22T22:57:44.630797 #24396]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T22:57:44.630883 #24396]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers?beer_name=Sidewalk_Shark
+I, [2019-09-22T22:57:46.098455 #24396]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:57:46.101083 #24396]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T22:57:46.101125 #24396]  INFO -- : Response code : 200
+I, [2019-09-22T22:57:46.101289 #24396]  INFO -- : Sidewalk Shark is in match with Sidewalk Shark
+I, [2019-09-22T22:57:46.101922 #24396]  INFO -- : Finished running scenario: Able to retrieve beers matching with beer_name
+I, [2019-09-22T22:57:46.101958 #24396]  INFO -- : ==========

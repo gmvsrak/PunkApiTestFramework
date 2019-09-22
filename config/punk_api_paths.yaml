@@ -1,0 +1,21 @@
+#endpoints and supported
+
+get_beers: /beers
+
+get_single_beer: /beers/1
+
+get_random_beer: /beers/random
+
+params:
+    abv_greater: abv_gt
+    abv_lesser: abv_lt
+    ibu_greater: ibu_gt
+    ibu_lesser: ibu_lt
+    beer_name: beer_name
+    yeast_name: yeast
+    hops_name: hops
+    before_date: brewed_before
+    after_date: brewed_after
+    food_name: food
+    malt_name: malt
+    matching_ID: ids
