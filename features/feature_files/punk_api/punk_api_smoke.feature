@@ -1,4 +1,4 @@
-Feature: Get Prerequisite Test to test Punk API
+Feature: Smoke Tests to test Punk API
 
   Background: Send request to Punk Api
     When I send request to punk api V2
