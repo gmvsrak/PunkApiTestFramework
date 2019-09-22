@@ -1,0 +1,79 @@
+# Logfile created on 2019-09-22 23:29:35 +0530 by logger.rb/53141
+I, [2019-09-22T23:29:35.183330 #25654]  INFO -- : ==========
+I, [2019-09-22T23:29:35.183430 #25654]  INFO -- : Start running scenario: Able to get single beer
+I, [2019-09-22T23:29:35.183470 #25654]  INFO -- : 20190922-232935
+I, [2019-09-22T23:29:35.189733 #25656]  INFO -- : ==========
+I, [2019-09-22T23:29:35.189854 #25656]  INFO -- : Start running scenario: Able to get random beer
+I, [2019-09-22T23:29:35.189894 #25656]  INFO -- : 20190922-232935
+I, [2019-09-22T23:29:35.194299 #25652]  INFO -- : ==========
+I, [2019-09-22T23:29:35.194388 #25652]  INFO -- : Start running scenario: Able to retrieve beers matching with beer_name
+I, [2019-09-22T23:29:35.194430 #25652]  INFO -- : 20190922-232935
+I, [2019-09-22T23:29:37.184856 #25654]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T23:29:37.187345 #25654]  INFO -- : Path is /beers/1
+I, [2019-09-22T23:29:37.187404 #25654]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T23:29:37.187484 #25654]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers/1
+I, [2019-09-22T23:29:38.033851 #25654]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T23:29:38.037432 #25654]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T23:29:38.037494 #25654]  INFO -- : Response code : 200
+I, [2019-09-22T23:29:38.038249 #25654]  INFO -- : Finished running scenario: Able to get single beer
+I, [2019-09-22T23:29:38.038283 #25654]  INFO -- : ==========
+I, [2019-09-22T23:29:38.193950 #25656]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T23:29:38.196486 #25656]  INFO -- : Path is /beers/random
+I, [2019-09-22T23:29:38.196562 #25656]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T23:29:38.196633 #25656]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers/random
+I, [2019-09-22T23:29:39.146935 #25656]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T23:29:39.150384 #25656]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T23:29:39.150454 #25656]  INFO -- : Response code : 200
+I, [2019-09-22T23:29:39.151247 #25656]  INFO -- : Path is /beers/random
+I, [2019-09-22T23:29:39.151301 #25656]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T23:29:39.151355 #25656]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers/random
+I, [2019-09-22T23:29:39.195406 #25652]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T23:29:39.198353 #25652]  INFO -- : Path is /beers
+I, [2019-09-22T23:29:39.198442 #25652]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T23:29:39.198515 #25652]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers?beer_name=Storm
+I, [2019-09-22T23:29:40.510326 #25656]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T23:29:40.511490 #25656]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T23:29:40.511546 #25656]  INFO -- : Response code : 200
+I, [2019-09-22T23:29:40.513597 #25656]  INFO -- : Finished running scenario: Able to get random beer
+I, [2019-09-22T23:29:40.513650 #25656]  INFO -- : ==========
+I, [2019-09-22T23:29:40.632359 #25652]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T23:29:40.635335 #25652]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T23:29:40.635393 #25652]  INFO -- : Response code : 200
+I, [2019-09-22T23:29:40.646366 #25652]  INFO -- : Finished running scenario: Able to retrieve beers matching with beer_name
+I, [2019-09-22T23:29:40.646420 #25652]  INFO -- : ==========
+I, [2019-09-22T23:29:40.651189 #25652]  INFO -- : ==========
+I, [2019-09-22T23:29:40.651257 #25652]  INFO -- : Start running scenario: Able to retrieve beers matching with beer_name
+I, [2019-09-22T23:29:40.651290 #25652]  INFO -- : 20190922-232940
+I, [2019-09-22T23:29:42.651833 #25652]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T23:29:42.652940 #25652]  INFO -- : Path is /beers
+I, [2019-09-22T23:29:42.653019 #25652]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T23:29:42.653112 #25652]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers?beer_name=Storm
+I, [2019-09-22T23:29:43.583904 #25652]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T23:29:43.584830 #25652]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T23:29:43.584871 #25652]  INFO -- : Response code : 200
+I, [2019-09-22T23:29:43.587609 #25652]  INFO -- : Finished running scenario: Able to retrieve beers matching with beer_name
+I, [2019-09-22T23:29:43.587642 #25652]  INFO -- : ==========
+I, [2019-09-22T23:29:43.589765 #25652]  INFO -- : ==========
+I, [2019-09-22T23:29:43.589804 #25652]  INFO -- : Start running scenario: Able to retrieve beers matching with beer_name
+I, [2019-09-22T23:29:43.589828 #25652]  INFO -- : 20190922-232943
+I, [2019-09-22T23:29:46.593937 #25652]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T23:29:46.594816 #25652]  INFO -- : Path is /beers
+I, [2019-09-22T23:29:46.594885 #25652]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T23:29:46.594953 #25652]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers?beer_name=Storm
+I, [2019-09-22T23:29:47.273787 #25652]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T23:29:47.275107 #25652]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T23:29:47.275146 #25652]  INFO -- : Response code : 200
+I, [2019-09-22T23:29:47.277270 #25652]  INFO -- : Finished running scenario: Able to retrieve beers matching with beer_name
+I, [2019-09-22T23:29:47.277307 #25652]  INFO -- : ==========
+I, [2019-09-22T23:29:47.280571 #25652]  INFO -- : ==========
+I, [2019-09-22T23:29:47.280618 #25652]  INFO -- : Start running scenario: Able to Access Punk API
+I, [2019-09-22T23:29:47.280652 #25652]  INFO -- : 20190922-232947
+I, [2019-09-22T23:29:51.282046 #25652]  INFO -- : Page Object Name: PunkApiRequestClient
+I, [2019-09-22T23:29:51.284835 #25652]  INFO -- : Path is /beers
+I, [2019-09-22T23:29:51.284917 #25652]  INFO -- : URL Path is https://api.punkapi.com/v2
+I, [2019-09-22T23:29:51.285002 #25652]  INFO -- : Requested URL is : https://api.punkapi.com/v2/beers
+I, [2019-09-22T23:29:53.034421 #25652]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T23:29:53.036119 #25652]  INFO -- : I FOUND THE RESPONSE CODE TO BE 200
+I, [2019-09-22T23:29:53.036199 #25652]  INFO -- : Response code : 200
+I, [2019-09-22T23:29:53.041995 #25652]  INFO -- : Finished running scenario: Able to Access Punk API
+I, [2019-09-22T23:29:53.045917 #25652]  INFO -- : ==========

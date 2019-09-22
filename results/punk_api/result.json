@@ -1,9 +1,134 @@
 [
   {
-    "uri": "features/feature_files/punk_api/punk_api_pre_requisites.feature",
-    "id": "get-prerequisite-test-to-test-punk-api",
+    "uri": "features/feature_files/punk_api/punk_api_regression.feature",
+    "id": "regression-test-to-test-punk-api",
     "keyword": "Feature",
-    "name": "Get Prerequisite Test to test Punk API",
+    "name": "Regression Test to test Punk API",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "Send request to Punk Api",
+        "description": "",
+        "line": 3,
+        "type": "background",
+        "before": [
+          {
+            "output": [
+              "Able to retrieve beers matching with beer_name}"
+            ],
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 342000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I send request to punk api V2",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/punk_api_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4002258000
+            }
+          }
+        ]
+      },
+      {
+        "id": "regression-test-to-test-punk-api;able-to-retrieve-beers-matching-with-beer_name",
+        "keyword": "Scenario",
+        "name": "Able to retrieve beers matching with beer_name",
+        "description": "",
+        "line": 13,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 12
+          },
+          {
+            "name": "@smoke",
+            "line": 12
+          },
+          {
+            "name": "@test",
+            "line": 12
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I retrieve beers with a given beer_name",
+            "line": 14,
+            "output": [
+              " Searched for expected data - Barrel_Aged_Hinterland "
+            ],
+            "match": {
+              "location": "features/step_definitions/punk_api_steps.rb:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1058858000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should get 200 responce",
+            "line": 15,
+            "output": [
+              "I FOUND THE RESPONSE CODE TO BE 200"
+            ],
+            "match": {
+              "location": "features/step_definitions/punk_api_steps.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2203000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "The retrieved beers should match with provided beer_name",
+            "line": 16,
+            "output": [
+              "Barrel Aged Hinterland is in match with Barrel Aged Hinterland"
+            ],
+            "match": {
+              "location": "features/step_definitions/punk_api_steps.rb:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 434000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 120000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "features/feature_files/punk_api/punk_api_smoke.feature",
+    "id": "smoke-tests-to-test-punk-api",
+    "keyword": "Feature",
+    "name": "Smoke Tests to test Punk API",
     "description": "",
     "line": 1,
     "elements": [
@@ -23,7 +148,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 305000
+              "duration": 153000
             }
           }
         ],
@@ -37,13 +162,13 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3001297000
+              "duration": 4000250000
             }
           }
         ]
       },
       {
-        "id": "get-prerequisite-test-to-test-punk-api;able-to-access-punk-api",
+        "id": "smoke-tests-to-test-punk-api;able-to-access-punk-api",
         "keyword": "Scenario",
         "name": "Able to Access Punk API",
         "description": "",
@@ -69,7 +194,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 270240000
+              "duration": 503513000
             }
           },
           {
@@ -84,7 +209,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2165000
+              "duration": 195000
             }
           },
           {
@@ -99,7 +224,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2092000
+              "duration": 3145000
             }
           }
         ],
@@ -110,128 +235,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 116000
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "uri": "features/feature_files/punk_api/punk_api_test.feature",
-    "id": "regression-test-to-test-punk-api",
-    "keyword": "Feature",
-    "name": "Regression Test to test Punk API",
-    "description": "",
-    "line": 1,
-    "elements": [
-      {
-        "keyword": "Background",
-        "name": "Send request to Punk Api",
-        "description": "",
-        "line": 3,
-        "type": "background",
-        "before": [
-          {
-            "output": [
-              "Able to retrieve beers matching with beer_name}"
-            ],
-            "match": {
-              "location": "features/support/hooks.rb:1"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 167000
-            }
-          }
-        ],
-        "steps": [
-          {
-            "keyword": "When ",
-            "name": "I send request to punk api V2",
-            "line": 4,
-            "match": {
-              "location": "features/step_definitions/punk_api_steps.rb:1"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2000455000
-            }
-          }
-        ]
-      },
-      {
-        "id": "regression-test-to-test-punk-api;able-to-retrieve-beers-matching-with-beer_name",
-        "keyword": "Scenario",
-        "name": "Able to retrieve beers matching with beer_name",
-        "description": "",
-        "line": 13,
-        "type": "scenario",
-        "tags": [
-          {
-            "name": "@regression",
-            "line": 12
-          },
-          {
-            "name": "@smoke",
-            "line": 12
-          }
-        ],
-        "steps": [
-          {
-            "keyword": "When ",
-            "name": "I retrieve beers with a given beer_name",
-            "line": 14,
-            "output": [
-              " Searched for expected data - Sidewalk_Shark "
-            ],
-            "match": {
-              "location": "features/step_definitions/punk_api_steps.rb:55"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 710080000
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "I should get 200 responce",
-            "line": 15,
-            "output": [
-              "I FOUND THE RESPONSE CODE TO BE 200"
-            ],
-            "match": {
-              "location": "features/step_definitions/punk_api_steps.rb:17"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 195000
-            }
-          },
-          {
-            "keyword": "And ",
-            "name": "The retrieved beers should match with provided beer_name",
-            "line": 16,
-            "output": [
-              "Sidewalk Shark is in match with Sidewalk Shark"
-            ],
-            "match": {
-              "location": "features/step_definitions/punk_api_steps.rb:62"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 405000
-            }
-          }
-        ],
-        "after": [
-          {
-            "match": {
-              "location": "features/support/hooks.rb:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 231000
+              "duration": 129000
             }
           }
         ]

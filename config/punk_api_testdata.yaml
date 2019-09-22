@@ -1,20 +1,24 @@
 ---
 :beer:
-  id: 275
-  name: Sidewalk Shark
-  tagline: Citrus-Infused German Sour.
-  first_brewed: '2017'
-  description: A citrus-infused gose - a traditional German sour wheat beer brewed
-    with salt, in this case with the addition of kaffir lime leaf and lemon peel.
-  image_url: https://images.punkapi.com/v2/keg.png
-  abv: 5.2
-  ibu: 22
-  target_fg: 1008
-  target_og: 1055
-  ebc: 7
-  srm: 4
-  ph: 3.8
-  attenuation_level: 85
+  id: 216
+  name: Barrel Aged Hinterland
+  tagline: A Most Beguiling Brew. Aged In Bourbon Casks.
+  first_brewed: 06/2016
+  description: Hinterland is a beer long in the creation, and even longer in the appreciation.
+    On the aroma, deep reverberating roasty bitterness and sweet dark chocolate. Also
+    in evidence, woodsmoke, rich vanilla, mocha and marzipan. When tasting, Hinterland
+    reveals itself as the beer moves from cellar temperature to something warmer,
+    yielding all of the above plus dried fruit, rich ganache and ending on a resoundingly
+    warming  nish redolent of chocolate liqueur or plum brandy. Aged in Bourbon Casks.
+  image_url: https://images.punkapi.com/v2/216.png
+  abv: 9
+  ibu: 85
+  target_fg: 1025
+  target_og: 1094
+  ebc: 400
+  srm: 200
+  ph: 4.3
+  attenuation_level: 73.4
   volume:
     value: 20
     unit: litres
@@ -24,72 +28,77 @@
   method:
     mash_temp:
     - temp:
-        value: 60
+        value: 65
         unit: celsius
-      duration: 80
+      duration: 
     fermentation:
       temp:
-        value: 20
+        value: 21
         unit: celsius
-    twist: 
+    twist: 'Lactose (Milk Sugar): 500g at middle'
   ingredients:
     malt:
-    - name: Pilsner
+    - name: Pale Ale
       amount:
-        value: 3.627
+        value: 6.88
         unit: kilograms
-    - name: Torrified Wheat
+    - name: Wheat
       amount:
-        value: 0.567
-        unit: kilograms
-    - name: Acidulated Malt
-      amount:
-        value: 0.283
-        unit: kilograms
-    - name: Rye
-      amount:
-        value: 0.136
+        value: 0.5
         unit: kilograms
     - name: Flaked Oats
       amount:
-        value: 0.136
+        value: 1
         unit: kilograms
-    hops:
-    - name: Magnum
+    - name: Dark Crystal
       amount:
-        value: 10
-        unit: grams
-      add: '60'
-      attribute: Bittering
-    - name: Mosaic
+        value: 0.5
+        unit: kilograms
+    - name: Carafa Special Malt Type 1
       amount:
-        value: 10
-        unit: grams
-      add: '0'
-      attribute: Aroma
-    - name: Amarillo
-      amount:
-        value: 10
-        unit: grams
-      add: '0'
-      attribute: Aroma
-    - name: Lemon Peel
-      amount:
-        value: 20
-        unit: grams
-      add: Flame Out
-      attribute: Flavour
-    - name: Coriander Seeds
+        value: 0.75
+        unit: kilograms
+    - name: Chocolate
       amount:
         value: 1
+        unit: kilograms
+    hops:
+    - name: Bramling Cross
+      amount:
+        value: 12.5
         unit: grams
-      add: Flame Out
-      attribute: Flavour
+      add: start
+      attribute: bitter
+    - name: Bramling Cross
+      amount:
+        value: 12.5
+        unit: grams
+      add: start
+      attribute: bitter
+    - name: Sorachi Ace
+      amount:
+        value: 12.5
+        unit: grams
+      add: middle
+      attribute: flavour
+    - name: Sorachi Ace
+      amount:
+        value: 25
+        unit: grams
+      add: end
+      attribute: flavour
+    - name: Willamette
+      amount:
+        value: 25
+        unit: grams
+      add: end
+      attribute: flavour
     yeast: Wyeast 1272 - American Ale II™
   food_pairing:
-  - Grilled Halibut
-  - Pickled Herrings
-  - Moules Frites
-  brewers_tips: Play around with the citrus flavour by using differing amounts of
-    lemon peel, orange peel, grapefruit peel, lime peel or kaffir lime leaves.
-  contributed_by: John Jenkman <johnjenkman>
+  - Mulled cheddar buffalo burger
+  - Venison with warm spices (cardamom) and sweet potato
+  - Pure vanilla bean ice cream
+  brewers_tips: Towards the end of the fermentation allow the temperature to free
+    rise. This will let the yeast finish off the fermentation and scour off-flavours
+    from the beer.
+  contributed_by: Sam Mason <samjbmason>

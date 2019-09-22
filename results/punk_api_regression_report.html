@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>overview,features,scenarios,errors</title><link rel="icon" href="http://reportbuilder.rajatthareja.com/rb.ico">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection"/>
+<link href="https://cdn.rawgit.com/rajatthareja/ReportBuilder/v1.6/css/report.builder.min.css" rel="stylesheet">
+</head><body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script><header class="brown lighten-5">
+<div class="row brown lighten-1">
+<div class="col m6 hide-on-small-only">
+<h5 class="truncate white-text tooltipped" data-tooltip="overview,features,scenarios,errors">overview,features,scenarios,errors</h5>
+</div><div class="col m6 s12 brown lighten-1">
+<ul class="tabs brown lighten-1 row" style="overflow-x: hidden">
+<li class="tab col s3">
+<a class="brown lighten-3 active blue-text waves-effect waves-light tooltipped" data-tooltip="Results Overview" href="#overview"><i class="material-icons">assessment</i> Overview</a>
+</li>
+<li class="tab col s3">
+<a class="brown lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Scenarios by Features" href="#features"><i class="material-icons">view_headline</i> Features</a>
+</li>
+<li class="tab col s3">
+<a class="brown lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Scenarios Summary Table" href="#summary"><i class="material-icons">view_comfy</i> Summary</a>
+</li>
+<li class="tab col s3">
+<a class="brown lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Failed Scenarios" href="#errors"><i class="material-icons">bug_report</i> Errors</a>
+</li>
+</ul>
+</div>
+</div>
+</header>
+<div id="g0f0s0" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><h5>Should not be able to retrieve beers matching with invalid beer_name (3.094s)</h5>
+features/feature_files/punk_api/punk_api_regression.feature:119<pre>Should not be able to retrieve beers matching with invalid beer_name}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (2.002s)</li>
+<li class="collection-item step passed">
+<b>When </b> I retrieve beers with a invalid beer_name parameter (1.090s)</li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 200 responce (0.002s)<pre>I FOUND THE RESPONSE CODE TO BE 200</pre></li>
+<li class="collection-item step passed">
+<b>And </b> The responce should be empty (0.000s)<pre>I FOUND THE RESPONSE DATA TO BE []</pre></li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s1" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><div class="chip"><i class="material-icons rotate-45">label</i>@smoke</div><div class="chip"><i class="material-icons rotate-45">label</i>@test</div><h5>Able to retrieve beers matching with beer_name (3.547s)</h5>
+features/feature_files/punk_api/punk_api_regression.feature:13<pre>Able to retrieve beers matching with beer_name}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (3.005s)</li>
+<li class="collection-item step passed">
+<b>When </b> I retrieve beers with a given beer_name (0.541s)<pre> Searched for expected data - Arcade_Nation </pre></li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 200 responce (0.000s)<pre>I FOUND THE RESPONSE CODE TO BE 200</pre></li>
+<li class="collection-item step passed">
+<b>And </b> The retrieved beers should match with provided beer_name (0.000s)<pre>Arcade Nation is in match with Arcade Nation</pre></li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s2" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><h5>Able to retrieve beers after given date (3.982s)</h5>
+features/feature_files/punk_api/punk_api_regression.feature:37<pre>Able to retrieve beers after given date}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (3.001s)</li>
+<li class="collection-item step passed">
+<b>When </b> I retrieve beers with a given after_date (0.974s)<pre> Searched for expected data - 12-2015 </pre></li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 200 responce (0.000s)<pre>I FOUND THE RESPONSE CODE TO BE 200</pre></li>
+<li class="collection-item step passed">
+<b>And </b> The retrieved beers should be brewed after_date (0.007s)<pre>2015-05-01T00:00:00+00:00 is in match with [#<DateTime: 2016-01-11T00:00:00+00:00 ((2457399j,0s,0n),+0s,2299161j)>, #<DateTime: 2016-01-11T00:00:00+00:00 ((2457399j,0s,0n),+0s,2299161j)>, #<DateTime: 2016-01-11T00:00:00+00:00 ((2457399j,0s,0n),+0s,2299161j)>, #<DateTime: 2016-01-11T00:00:00+00:00 ((2457399j,0s,0n),+0s,2299161j)>, #<DateTime: 2016-03-01T00:00:00+00:00 ((2457449j,0s,0n),+0s,2299161j)>, #<DateTime: 2016-03-01T00:00:00+00:00 ((2457449j,0s,0n),+0s,2299161j)>, #<DateTime: 2016-01-31T00:00:00+00:00 ((2457419j,0s,0n),+0s,2299161j)>, #<DateTime: 2016-01-31T00:00:00+00:00 ((2457419j,0s,0n),+0s,2299161j)>, #<DateTime: 2016-01-11T00:00:00+00:00 ((2457399j,0s,0n),+0s,2299161j)>, #<DateTime: 2016-03-01T00:00:00+00:00 ((2457449j,0s,0n),+0s,2299161j)>, #<DateTime: 2016-03-01T00:00:00+00:00 ((2457449j,0s,0n),+0s,2299161j)>, #<DateTime: 2016-03-01T00:00:00+00:00 ((2457449j,0s,0n),+0s,2299161j)>, #<DateTime: 2016-03-01T00:00:00+00:00 ((2457449j,0s,0n),+0s,2299161j)>, #<DateTime: 2016-03-01T00:00:00+00:00 ((2457449j,0s,0n),+0s,2299161j)>, #<DateTime: 2016-03-01T00:00:00+00:00 ((2457449j,0s,0n),+0s,2299161j)>, #<DateTime: 2016-03-01T00:00:00+00:00 ((2457449j,0s,0n),+0s,2299161j)>, #<DateTime: 2016-03-01T00:00:00+00:00 ((2457449j,0s,0n),+0s,2299161j)>, #<DateTime: 2016-03-01T00:00:00+00:00 ((2457449j,0s,0n),+0s,2299161j)>, #<DateTime: 2016-03-01T00:00:00+00:00 ((2457449j,0s,0n),+0s,2299161j)>, #<DateTime: 2016-01-11T00:00:00+00:00 ((2457399j,0s,0n),+0s,2299161j)>, #<DateTime: 2016-01-11T00:00:00+00:00 ((2457399j,0s,0n),+0s,2299161j)>, #<DateTime: 2016-01-11T00:00:00+00:00 ((2457399j,0s,0n),+0s,2299161j)>, #<DateTime: 2016-01-11T00:00:00+00:00 ((2457399j,0s,0n),+0s,2299161j)>]</pre></li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s3" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><h5>Able to retrieve beer with matching ID (2.457s)</h5>
+features/feature_files/punk_api/punk_api_regression.feature:61<pre>Able to retrieve beer with matching ID}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (2.001s)</li>
+<li class="collection-item step passed">
+<b>When </b> I retrieve beers with a given matching_ID (0.456s)<pre> Searched for expected data - 12 </pre></li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 200 responce (0.000s)<pre>I FOUND THE RESPONSE CODE TO BE 200</pre></li>
+<li class="collection-item step passed">
+<b>And </b> The retrieved beers should match with provided matching_ID (0.000s)<pre>12 is in match with 12</pre></li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s4" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><h5>Get beers with given 3 parameters (2.580s)</h5>
+features/feature_files/punk_api/punk_api_regression.feature:84<pre>Get beers with given 3 parameters, Examples (#1)}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (2.002s)</li>
+<li class="collection-item step passed">
+<b>When </b> I retrieve beers matching with 3 given beer_name and hops_name and yeast_name parameters (0.575s)<pre> Searched for expected data - ["Arcade_Nation", "Citra", "Wyeast_1056_-_American_Ale™"] </pre></li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 200 responce (0.002s)<pre>I FOUND THE RESPONSE CODE TO BE 200</pre></li>
+<li class="collection-item step passed">
+<b>And </b> The retrieved beers should match with 3 given beer_name and hops_name and yeast_name parameters (0.001s)<pre>["Arcade Nation", "Simcoe", "Simcoe", "Simcoe", "Amarillo", "Citra", "Simcoe", "Amarillo", "Citra", "Wyeast 1056 - American Ale™"] is in match with ["Arcade Nation", "Citra", "Wyeast 1056 - American Ale™"]</pre></li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s5" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><h5>Get beers with given 4 parameters (5.578s)</h5>
+features/feature_files/punk_api/punk_api_regression.feature:96<pre>Get beers with given 4 parameters, Examples (#2)}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (4.003s)</li>
+<li class="collection-item step passed">
+<b>When </b> I retrieve beers matching with 4 given malt_name and hops_name and yeast_name and matching_ID parameters only (1.574s)<pre> Searched for expected data - ["Carafa_Special_Malt_Type_1", "Simcoe", "Wyeast_1056_-_American_Ale™", "12"] </pre></li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 200 responce (0.000s)<pre>I FOUND THE RESPONSE CODE TO BE 200</pre></li>
+<li class="collection-item step passed">
+<b>And </b> The retrieved beers should match with 4 given malt_name and hops_name and yeast_name and matching_ID parameters only (0.000s)<pre>["Pale Ale", "Caramalt", "Crystal 150", "Carafa Special Malt Type 1", "Simcoe", "Simcoe", "Simcoe", "Amarillo", "Citra", "Simcoe", "Amarillo", "Citra", "Wyeast 1056 - American Ale™", "12"] is in match with ["Carafa Special Malt Type 1", "Simcoe", "Wyeast 1056 - American Ale™", "12"]</pre></li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s6" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><h5>Should not be able to retrieve beers with empty food parameter (3.055s)</h5>
+features/feature_files/punk_api/punk_api_regression.feature:106<pre>Should not be able to retrieve beers with empty food parameter}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (2.002s)</li>
+<li class="collection-item step passed">
+<b>When </b> I retrieve beers with a empty food parameters (1.047s)</li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 400 responce (0.005s)<pre>I FOUND THE RESPONSE CODE TO BE 400</pre></li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s7" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><h5>Able to retrieve beers matching with hops name (4.832s)</h5>
+features/feature_files/punk_api/punk_api_regression.feature:25<pre>Able to retrieve beers matching with hops name}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (4.001s)</li>
+<li class="collection-item step passed">
+<b>When </b> I retrieve beers with a given hops_name (0.824s)<pre> Searched for expected data - Amarillo </pre></li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 200 responce (0.000s)<pre>I FOUND THE RESPONSE CODE TO BE 200</pre></li>
+<li class="collection-item step passed">
+<b>And </b> The retrieved beers should match with provided hops_name (0.006s)<pre>["Amarillo", "Simcoe", "Centennial", "Amarillo", "Simcoe", "Centennial", "Amarillo", "Simcoe", "Cascade", "Ahtanum", "Centennial", "Cascade", "Ahtanum", "Simcoe", "Columbus"] is in match with Amarillo</pre></li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s8" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><h5>Able to retrieve beers matching with given food name (4.648s)</h5>
+features/feature_files/punk_api/punk_api_regression.feature:49<pre>Able to retrieve beers matching with given food name}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (4.004s)</li>
+<li class="collection-item step passed">
+<b>When </b> I retrieve beers with a given food_name (0.643s)<pre> Searched for expected data - Halibut_with_a_mango_and_tomato_salad </pre></li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 200 responce (0.000s)<pre>I FOUND THE RESPONSE CODE TO BE 200</pre></li>
+<li class="collection-item step passed">
+<b>And </b> The retrieved beers should match with provided food_name (0.000s)<pre>["King prawn kebabs", "Halibut with a mango and tomato salad", "Mint chocloate ice cream"] is in match with Halibut with a mango and tomato salad</pre></li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s9" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><h5>Get beers with given 2 parameters (4.454s)</h5>
+features/feature_files/punk_api/punk_api_regression.feature:74<pre>Get beers with given 2 parameters, Examples (#2)}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (4.001s)</li>
+<li class="collection-item step passed">
+<b>When </b> I retrieve beers matching with 2 given beer_name and yeast_name only (0.453s)<pre> Searched for expected data - ["Arcade_Nation", "Wyeast_1056_-_American_Ale™"] </pre></li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 200 responce (0.000s)<pre>I FOUND THE RESPONSE CODE TO BE 200</pre></li>
+<li class="collection-item step passed">
+<b>And </b> The retrieved beers should match with 2 given beer_name and yeast_name only (0.000s)<pre>["Arcade Nation", "Wyeast 1056 - American Ale™"] is in match with ["Arcade Nation", "Wyeast 1056 - American Ale™"]</pre></li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s10" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><h5>Get beers with given 3 parameters (2.545s)</h5>
+features/feature_files/punk_api/punk_api_regression.feature:86<pre>Get beers with given 3 parameters, Examples (#3)}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (2.005s)</li>
+<li class="collection-item step passed">
+<b>When </b> I retrieve beers matching with 3 given matching_ID and beer_name and malt_name parameters (0.538s)<pre> Searched for expected data - ["12", "Arcade_Nation", "Crystal_150"] </pre></li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 200 responce (0.000s)<pre>I FOUND THE RESPONSE CODE TO BE 200</pre></li>
+<li class="collection-item step passed">
+<b>And </b> The retrieved beers should match with 3 given matching_ID and beer_name and malt_name parameters (0.001s)<pre>["12", "Arcade Nation", "Pale Ale", "Caramalt", "Crystal 150", "Carafa Special Malt Type 1"] is in match with ["12", "Arcade Nation", "Crystal 150"]</pre></li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s11" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><h5>Should not be able to retrieve beers with invalid endpoint (3.793s)</h5>
+features/feature_files/punk_api/punk_api_regression.feature:101<pre>Should not be able to retrieve beers with invalid endpoint}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (3.001s)</li>
+<li class="collection-item step passed">
+<b>When </b> I retrieve beers with a invalid endpoint (0.789s)</li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 404 responce (0.002s)<pre>I FOUND THE RESPONSE CODE TO BE 404</pre></li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s12" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><h5>Able to retrieve beers matching with yeast name (3.564s)</h5>
+features/feature_files/punk_api/punk_api_regression.feature:19<pre>Able to retrieve beers matching with yeast name}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (3.002s)</li>
+<li class="collection-item step passed">
+<b>When </b> I retrieve beers with a given yeast_name (0.552s)<pre> Searched for expected data - Wyeast_1056_-_American_Ale™ </pre></li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 200 responce (0.000s)<pre>I FOUND THE RESPONSE CODE TO BE 200</pre></li>
+<li class="collection-item step passed">
+<b>And </b> The retrieved beers should match with provided yeast_name (0.010s)<pre>Wyeast 1056 - American Ale™ is in match with Wyeast 1056 - American Ale™</pre></li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s13" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><h5>Able to retrieve beers before current date (2.956s)</h5>
+features/feature_files/punk_api/punk_api_regression.feature:43<pre>Able to retrieve beers before current date}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (2.003s)</li>
+<li class="collection-item step passed">
+<b>When </b> I retrieve beers with a given current_date (0.947s)<pre> Searched for expected data - 09-2019 </pre></li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 200 responce (0.000s)<pre>I FOUND THE RESPONSE CODE TO BE 200</pre></li>
+<li class="collection-item step passed">
+<b>And </b> The retrieved beers should be brewed current_date (0.006s)<pre>2019-09-22T23:34:43+05:30 is in match with [#<DateTime: 2007-04-01T00:00:00+00:00 ((2454192j,0s,0n),+0s,2299161j)>, #<DateTime: 2008-02-10T00:00:00+00:00 ((2454507j,0s,0n),+0s,2299161j)>, #<DateTime: 2015-04-21T00:00:00+00:00 ((2457134j,0s,0n),+0s,2299161j)>, #<DateTime: 2013-04-01T00:00:00+00:00 ((2456384j,0s,0n),+0s,2299161j)>, #<DateTime: 2011-01-21T00:00:00+00:00 ((2455583j,0s,0n),+0s,2299161j)>, #<DateTime: 2013-02-20T00:00:00+00:00 ((2456344j,0s,0n),+0s,2299161j)>, #<DateTime: 2012-03-11T00:00:00+00:00 ((2455998j,0s,0n),+0s,2299161j)>, #<DateTime: 2013-01-31T00:00:00+00:00 ((2456324j,0s,0n),+0s,2299161j)>, #<DateTime: 2010-01-31T00:00:00+00:00 ((2455228j,0s,0n),+0s,2299161j)>, #<DateTime: 2011-01-11T00:00:00+00:00 ((2455573j,0s,0n),+0s,2299161j)>, #<DateTime: 2013-02-10T00:00:00+00:00 ((2456334j,0s,0n),+0s,2299161j)>, #<DateTime: 2015-05-01T00:00:00+00:00 ((2457144j,0s,0n),+0s,2299161j)>, #<DateTime: 2009-04-21T00:00:00+00:00 ((2454943j,0s,0n),+0s,2299161j)>, #<DateTime: 2010-01-21T00:00:00+00:00 ((2455218j,0s,0n),+0s,2299161j)>, #<DateTime: 2012-01-11T00:00:00+00:00 ((2455938j,0s,0n),+0s,2299161j)>, #<DateTime: 2012-01-11T00:00:00+00:00 ((2455938j,0s,0n),+0s,2299161j)>, #<DateTime: 2011-02-10T00:00:00+00:00 ((2455603j,0s,0n),+0s,2299161j)>, #<DateTime: 2014-03-22T00:00:00+00:00 ((2456739j,0s,0n),+0s,2299161j)>, #<DateTime: 2013-03-02T00:00:00+00:00 ((2456354j,0s,0n),+0s,2299161j)>, #<DateTime: 2011-01-31T00:00:00+00:00 ((2455593j,0s,0n),+0s,2299161j)>, #<DateTime: 2013-02-10T00:00:00+00:00 ((2456334j,0s,0n),+0s,2299161j)>, #<DateTime: 2008-04-30T00:00:00+00:00 ((2454587j,0s,0n),+0s,2299161j)>, #<DateTime: 2007-05-01T00:00:00+00:00 ((2454222j,0s,0n),+0s,2299161j)>, #<DateTime: 2011-03-02T00:00:00+00:00 ((2455623j,0s,0n),+0s,2299161j)>, #<DateTime: 2008-04-10T00:00:00+00:00 ((2454567j,0s,0n),+0s,2299161j)>]</pre></li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s14" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><h5>Get beers with given 2 parameters (2.557s)</h5>
+features/feature_files/punk_api/punk_api_regression.feature:73<pre>Get beers with given 2 parameters, Examples (#1)}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (2.001s)</li>
+<li class="collection-item step passed">
+<b>When </b> I retrieve beers matching with 2 given beer_name and hops_name only (0.555s)<pre> Searched for expected data - ["Arcade_Nation", "Simcoe"] </pre></li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 200 responce (0.000s)<pre>I FOUND THE RESPONSE CODE TO BE 200</pre></li>
+<li class="collection-item step passed">
+<b>And </b> The retrieved beers should match with 2 given beer_name and hops_name only (0.001s)<pre>["Arcade Nation", "Simcoe", "Simcoe", "Simcoe", "Amarillo", "Citra", "Simcoe", "Amarillo", "Citra"] is in match with ["Arcade Nation", "Simcoe"]</pre></li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s15" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><h5>Get beers with given 3 parameters (3.588s)</h5>
+features/feature_files/punk_api/punk_api_regression.feature:85<pre>Get beers with given 3 parameters, Examples (#2)}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (3.004s)</li>
+<li class="collection-item step passed">
+<b>When </b> I retrieve beers matching with 3 given malt_name and hops_name and yeast_name parameters (0.583s)<pre> Searched for expected data - ["Carafa_Special_Malt_Type_1", "Simcoe", "Wyeast_1056_-_American_Ale™"] </pre></li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 200 responce (0.000s)<pre>I FOUND THE RESPONSE CODE TO BE 200</pre></li>
+<li class="collection-item step passed">
+<b>And </b> The retrieved beers should match with 3 given malt_name and hops_name and yeast_name parameters (0.001s)<pre>["Extra Pale", "Flaked Oats", "Brown", "Crystal 150", "Munich", "Carafa Special Malt Type 1", "Columbus", "Simcoe", "Centennial", "Columbus", "Simcoe", "Citra", "Wyeast 1056 - American Ale™"] is in match with ["Carafa Special Malt Type 1", "Simcoe", "Wyeast 1056 - American Ale™"]</pre></li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s16" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><h5>Get beers with empty parameters (3.794s)</h5>
+features/feature_files/punk_api/punk_api_regression.feature:116<pre>Get beers with empty parameters, Examples (#1)}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (3.001s)</li>
+<li class="collection-item step passed">
+<b>When </b> I retrieve beers matching with empty givenname and hops (0.789s)</li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 400 responce (0.003s)<pre>I FOUND THE RESPONSE CODE TO BE 400</pre></li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s17" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><h5>Able to retrieve beers before given date (2.735s)</h5>
+features/feature_files/punk_api/punk_api_regression.feature:31<pre>Able to retrieve beers before given date}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (2.005s)</li>
+<li class="collection-item step passed">
+<b>When </b> I retrieve beers with a given before_date (0.722s)<pre> Searched for expected data - 12-2015 </pre></li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 200 responce (0.000s)<pre>I FOUND THE RESPONSE CODE TO BE 200</pre></li>
+<li class="collection-item step passed">
+<b>And </b> The retrieved beers should be brewed before_date (0.007s)<pre>2015-05-01T00:00:00+00:00 is in match with [#<DateTime: 2007-04-01T00:00:00+00:00 ((2454192j,0s,0n),+0s,2299161j)>, #<DateTime: 2008-02-10T00:00:00+00:00 ((2454507j,0s,0n),+0s,2299161j)>, #<DateTime: 2015-04-21T00:00:00+00:00 ((2457134j,0s,0n),+0s,2299161j)>, #<DateTime: 2013-04-01T00:00:00+00:00 ((2456384j,0s,0n),+0s,2299161j)>, #<DateTime: 2011-01-21T00:00:00+00:00 ((2455583j,0s,0n),+0s,2299161j)>, #<DateTime: 2013-02-20T00:00:00+00:00 ((2456344j,0s,0n),+0s,2299161j)>, #<DateTime: 2012-03-11T00:00:00+00:00 ((2455998j,0s,0n),+0s,2299161j)>, #<DateTime: 2013-01-31T00:00:00+00:00 ((2456324j,0s,0n),+0s,2299161j)>, #<DateTime: 2010-01-31T00:00:00+00:00 ((2455228j,0s,0n),+0s,2299161j)>, #<DateTime: 2011-01-11T00:00:00+00:00 ((2455573j,0s,0n),+0s,2299161j)>, #<DateTime: 2013-02-10T00:00:00+00:00 ((2456334j,0s,0n),+0s,2299161j)>, #<DateTime: 2009-04-21T00:00:00+00:00 ((2454943j,0s,0n),+0s,2299161j)>, #<DateTime: 2010-01-21T00:00:00+00:00 ((2455218j,0s,0n),+0s,2299161j)>, #<DateTime: 2012-01-11T00:00:00+00:00 ((2455938j,0s,0n),+0s,2299161j)>, #<DateTime: 2012-01-11T00:00:00+00:00 ((2455938j,0s,0n),+0s,2299161j)>, #<DateTime: 2011-02-10T00:00:00+00:00 ((2455603j,0s,0n),+0s,2299161j)>, #<DateTime: 2014-03-22T00:00:00+00:00 ((2456739j,0s,0n),+0s,2299161j)>, #<DateTime: 2013-03-02T00:00:00+00:00 ((2456354j,0s,0n),+0s,2299161j)>, #<DateTime: 2011-01-31T00:00:00+00:00 ((2455593j,0s,0n),+0s,2299161j)>, #<DateTime: 2013-02-10T00:00:00+00:00 ((2456334j,0s,0n),+0s,2299161j)>, #<DateTime: 2008-04-30T00:00:00+00:00 ((2454587j,0s,0n),+0s,2299161j)>, #<DateTime: 2007-05-01T00:00:00+00:00 ((2454222j,0s,0n),+0s,2299161j)>, #<DateTime: 2011-03-02T00:00:00+00:00 ((2455623j,0s,0n),+0s,2299161j)>, #<DateTime: 2008-04-10T00:00:00+00:00 ((2454567j,0s,0n),+0s,2299161j)>, #<DateTime: 2010-01-21T00:00:00+00:00 ((2455218j,0s,0n),+0s,2299161j)>]</pre></li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s18" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><h5>Able to retrieve beers matching with given malt name (3.793s)</h5>
+features/feature_files/punk_api/punk_api_regression.feature:55<pre>Able to retrieve beers matching with given malt name}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (3.001s)</li>
+<li class="collection-item step passed">
+<b>When </b> I retrieve beers with a given malt_name (0.787s)<pre> Searched for expected data - Pale_Ale </pre></li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 200 responce (0.000s)<pre>I FOUND THE RESPONSE CODE TO BE 200</pre></li>
+<li class="collection-item step passed">
+<b>And </b> The retrieved beers should match with provided malt_name (0.004s)<pre>["Pale Ale"] is in match with Pale Ale</pre></li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s19" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><h5>Get beers with given 2 parameters (2.536s)</h5>
+features/feature_files/punk_api/punk_api_regression.feature:75<pre>Get beers with given 2 parameters, Examples (#3)}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (2.002s)</li>
+<li class="collection-item step passed">
+<b>When </b> I retrieve beers matching with 2 given matching_ID and yeast_name only (0.533s)<pre> Searched for expected data - ["12", "Wyeast_1056_-_American_Ale™"] </pre></li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 200 responce (0.000s)<pre>I FOUND THE RESPONSE CODE TO BE 200</pre></li>
+<li class="collection-item step passed">
+<b>And </b> The retrieved beers should match with 2 given matching_ID and yeast_name only (0.001s)<pre>["12", "Wyeast 1056 - American Ale™"] is in match with ["12", "Wyeast 1056 - American Ale™"]</pre></li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s20" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><h5>Generate random test data (2.807s)</h5>
+features/feature_files/punk_api/punk_api_regression.feature:8<pre>Generate random test data}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (2.002s)</li>
+<li class="collection-item step passed">
+<b>And </b> I retrieve random beer (0.794s)</li>
+<li class="collection-item step passed">
+<b>Then </b> I build dynamic data (0.011s)</li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f0s21" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><h5>Get beers with given 4 parameters (2.454s)</h5>
+features/feature_files/punk_api/punk_api_regression.feature:95<pre>Get beers with given 4 parameters, Examples (#1)}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (2.002s)</li>
+<li class="collection-item step passed">
+<b>When </b> I retrieve beers matching with 4 given beer_name and hops_name and yeast_name and malt_name parameters only (0.451s)<pre> Searched for expected data - ["Arcade_Nation", "Simcoe", "Wyeast_1056_-_American_Ale™", "Crystal_150"] </pre></li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 200 responce (0.000s)<pre>I FOUND THE RESPONSE CODE TO BE 200</pre></li>
+<li class="collection-item step passed">
+<b>And </b> The retrieved beers should match with 4 given beer_name and hops_name and yeast_name and malt_name parameters only (0.001s)<pre>["Arcade Nation", "Simcoe", "Simcoe", "Simcoe", "Amarillo", "Citra", "Simcoe", "Amarillo", "Citra", "Wyeast 1056 - American Ale™", "Pale Ale", "Caramalt", "Crystal 150", "Carafa Special Malt Type 1"] is in match with ["Arcade Nation", "Simcoe", "Wyeast 1056 - American Ale™", "Crystal 150"]</pre></li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f1s0" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@smoke</div><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><h5>Able to Access Punk API (4.269s)</h5>
+features/feature_files/punk_api/punk_api_smoke.feature:7<pre>Able to Access Punk API}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (4.002s)</li>
+<li class="collection-item step passed">
+<b>And </b> I retrieve beers (0.264s)</li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 200 responce (0.000s)<pre>I FOUND THE RESPONSE CODE TO BE 200</pre></li>
+<li class="collection-item step passed">
+<b>And </b> I should have list of beers (0.003s)<pre>1</pre></li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f1s1" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@smoke</div><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><h5>Able to get random beer (5.225s)</h5>
+features/feature_files/punk_api/punk_api_smoke.feature:19<pre>Able to get random beer}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (4.002s)</li>
+<li class="collection-item step passed">
+<b>And </b> I retrieve random beer (0.476s)</li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 200 responce (0.000s)<pre>I FOUND THE RESPONSE CODE TO BE 200</pre></li>
+<li class="collection-item step passed">
+<b>And </b> I should get random beer data (0.000s)</li>
+<li class="collection-item step passed">
+<b>When </b> I retrieve random beer (0.746s)</li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 200 responce (0.000s)<pre>I FOUND THE RESPONSE CODE TO BE 200</pre></li>
+<li class="collection-item step passed">
+<b>And </b> I should get other random beer data (0.001s)</li>
+<li class="collection-item step passed">
+<b>Then </b> I compare random beers retrieved beers should be different (0.000s)</li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div><div id="g0f1s2" class="modal modal-fixed-footer">
+<div class="modal-content"><div class="chip"><i class="material-icons rotate-45">label</i>@smoke</div><div class="chip"><i class="material-icons rotate-45">label</i>@regression</div><h5>Able to get single beer (2.246s)</h5>
+features/feature_files/punk_api/punk_api_smoke.feature:13<pre>Able to get single beer}</pre>
+<ul class="collection stepList"><li class="collection-item step passed">
+<b>When </b> I send request to punk api V2 (Background) (2.001s)</li>
+<li class="collection-item step passed">
+<b>And </b> I retrieve single beer (0.244s)</li>
+<li class="collection-item step passed">
+<b>Then </b> I should get 200 responce (0.000s)<pre>I FOUND THE RESPONSE CODE TO BE 200</pre></li>
+<li class="collection-item step passed">
+<b>And </b> I should get 1 beer (0.000s)<pre>1</pre></li>
+</ul></div><div class="modal-footer">
+<span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function () {$('#g0f0s0').modal();$('#g0f0s1').modal();$('#g0f0s2').modal();$('#g0f0s3').modal();$('#g0f0s4').modal();$('#g0f0s5').modal();$('#g0f0s6').modal();$('#g0f0s7').modal();$('#g0f0s8').modal();$('#g0f0s9').modal();$('#g0f0s10').modal();$('#g0f0s11').modal();$('#g0f0s12').modal();$('#g0f0s13').modal();$('#g0f0s14').modal();$('#g0f0s15').modal();$('#g0f0s16').modal();$('#g0f0s17').modal();$('#g0f0s18').modal();$('#g0f0s19').modal();$('#g0f0s20').modal();$('#g0f0s21').modal();$('#g0f0s22').modal();$('#g0f1s0').modal();$('#g0f1s1').modal();$('#g0f1s2').modal();$('#g0f1s3').modal();});
+</script>
+<main class="brown lighten-5">
+<div class="row"><div id="overview" class="col s12 brown lighten-5">
+<div class="row">
+<div class="col m4 s12">
+<canvas id="featuresDoughnut" width="400" height="400"></canvas>
+<table id="metaDataFeatures" class="bordered">
+<tbody></tbody>
+</table>
+</div><div class="col m4 s12">
+<canvas id="scenariosDoughnut" width="400" height="400"></canvas>
+<table id="metaDataScenarios" class="bordered">
+<tbody></tbody>
+</table>
+</div><div class="col m4 s12">
+<table id="metaData" class="bordered">
+<tbody>
+<tr><th>Total Time</th><td>1m 27.09s</td></tr></tbody>
+</table>
+</div>
+</div></div><div id="features" class="col s12 brown lighten-5 white-text">
+<ul class="featureList collapsible popout" data-collapsible="expandable">
+<li class="feature working">
+<div class="collapsible-header brown lighten-1 waves-effect waves-light">
+<i class="material-icons">featured_play_list</i>
+<b>Feature</b>&nbsp;Regression Test to test Punk API&nbsp;(1m 15.35s)
+</div><div class="collapsible-body brown lighten-4">
+<ul class="collection scenarioList"><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s0">
+<b>Scenario</b> Should not be able to retrieve beers matching with invalid beer_name&nbsp;(3.094s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s1">
+<b>Scenario</b> Able to retrieve beers matching with beer_name&nbsp;(3.547s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s2">
+<b>Scenario</b> Able to retrieve beers after given date&nbsp;(3.982s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s3">
+<b>Scenario</b> Able to retrieve beer with matching ID&nbsp;(2.457s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s4">
+<b>Scenario Outline</b> Get beers with given 3 parameters&nbsp;(2.580s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s5">
+<b>Scenario Outline</b> Get beers with given 4 parameters&nbsp;(5.578s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s6">
+<b>Scenario</b> Should not be able to retrieve beers with empty food parameter&nbsp;(3.055s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s7">
+<b>Scenario</b> Able to retrieve beers matching with hops name&nbsp;(4.832s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s8">
+<b>Scenario</b> Able to retrieve beers matching with given food name&nbsp;(4.648s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s9">
+<b>Scenario Outline</b> Get beers with given 2 parameters&nbsp;(4.454s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s10">
+<b>Scenario Outline</b> Get beers with given 3 parameters&nbsp;(2.545s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s11">
+<b>Scenario</b> Should not be able to retrieve beers with invalid endpoint&nbsp;(3.793s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s12">
+<b>Scenario</b> Able to retrieve beers matching with yeast name&nbsp;(3.564s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s13">
+<b>Scenario</b> Able to retrieve beers before current date&nbsp;(2.956s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s14">
+<b>Scenario Outline</b> Get beers with given 2 parameters&nbsp;(2.557s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s15">
+<b>Scenario Outline</b> Get beers with given 3 parameters&nbsp;(3.588s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s16">
+<b>Scenario Outline</b> Get beers with empty parameters&nbsp;(3.794s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s17">
+<b>Scenario</b> Able to retrieve beers before given date&nbsp;(2.735s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s18">
+<b>Scenario</b> Able to retrieve beers matching with given malt name&nbsp;(3.793s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s19">
+<b>Scenario Outline</b> Get beers with given 2 parameters&nbsp;(2.536s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s20">
+<b>Scenario</b> Generate random test data&nbsp;(2.807s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f0s21">
+<b>Scenario Outline</b> Get beers with given 4 parameters&nbsp;(2.454s)
+</a>
+</li></ul>
+</div>
+</li><li class="feature working">
+<div class="collapsible-header brown lighten-1 waves-effect waves-light">
+<i class="material-icons">featured_play_list</i>
+<b>Feature</b>&nbsp;Smoke Tests to test Punk API&nbsp;(11.740s)
+</div><div class="collapsible-body brown lighten-4">
+<ul class="collection scenarioList"><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f1s0">
+<b>Scenario</b> Able to Access Punk API&nbsp;(4.269s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f1s1">
+<b>Scenario</b> Able to get random beer&nbsp;(5.225s)
+</a>
+</li><li class="collection-item scenario passed">
+<a class="waves-effect waves-light modal-trigger white-text" href="#g0f1s2">
+<b>Scenario</b> Able to get single beer&nbsp;(2.246s)
+</a>
+</li></ul>
+</div>
+</li>
+</ul></div><div id="summary" class="col s12 brown lighten-5">
+<table id="summaryTable" class="bordered brown lighten-1 white-text" width="100%">
+<thead>
+<tr>
+<th class="hide-on-small-only">Feature</th>
+<th>Scenario</th>
+<th class="hide">Tags</th>
+<th>Status</th>
+<th class="hide-on-small-only">Error</th>
+</tr>
+</thead>
+<tbody><tr class="passed">
+<td class="hide-on-small-only">
+Regression Test to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s0">Should not be able to retrieve beers matching with invalid beer_name</a>
+</td><td class="hide">
+@regression. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Regression Test to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s1">Able to retrieve beers matching with beer_name</a>
+</td><td class="hide">
+@regression. @smoke. @test. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Regression Test to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s2">Able to retrieve beers after given date</a>
+</td><td class="hide">
+@regression. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Regression Test to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s3">Able to retrieve beer with matching ID</a>
+</td><td class="hide">
+@regression. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Regression Test to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s4">Get beers with given 3 parameters</a>
+</td><td class="hide">
+@regression. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Regression Test to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s5">Get beers with given 4 parameters</a>
+</td><td class="hide">
+@regression. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Regression Test to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s6">Should not be able to retrieve beers with empty food parameter</a>
+</td><td class="hide">
+@regression. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Regression Test to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s7">Able to retrieve beers matching with hops name</a>
+</td><td class="hide">
+@regression. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Regression Test to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s8">Able to retrieve beers matching with given food name</a>
+</td><td class="hide">
+@regression. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Regression Test to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s9">Get beers with given 2 parameters</a>
+</td><td class="hide">
+@regression. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Regression Test to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s10">Get beers with given 3 parameters</a>
+</td><td class="hide">
+@regression. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Regression Test to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s11">Should not be able to retrieve beers with invalid endpoint</a>
+</td><td class="hide">
+@regression. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Regression Test to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s12">Able to retrieve beers matching with yeast name</a>
+</td><td class="hide">
+@regression. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Regression Test to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s13">Able to retrieve beers before current date</a>
+</td><td class="hide">
+@regression. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Regression Test to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s14">Get beers with given 2 parameters</a>
+</td><td class="hide">
+@regression. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Regression Test to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s15">Get beers with given 3 parameters</a>
+</td><td class="hide">
+@regression. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Regression Test to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s16">Get beers with empty parameters</a>
+</td><td class="hide">
+@regression. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Regression Test to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s17">Able to retrieve beers before given date</a>
+</td><td class="hide">
+@regression. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Regression Test to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s18">Able to retrieve beers matching with given malt name</a>
+</td><td class="hide">
+@regression. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Regression Test to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s19">Get beers with given 2 parameters</a>
+</td><td class="hide">
+@regression. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Regression Test to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s20">Generate random test data</a>
+</td><td class="hide">
+@regression. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Regression Test to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f0s21">Get beers with given 4 parameters</a>
+</td><td class="hide">
+@regression. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Smoke Tests to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f1s0">Able to Access Punk API</a>
+</td><td class="hide">
+@smoke. @regression. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Smoke Tests to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f1s1">Able to get random beer</a>
+</td><td class="hide">
+@smoke. @regression. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+<tr class="passed">
+<td class="hide-on-small-only">
+Smoke Tests to test Punk API
+</td><td class="hoverable">
+<a class="modal-trigger white-text" href="#g0f1s2">Able to get single beer</a>
+</td><td class="hide">
+@smoke. @regression. 
+</td><td class="uppercase">
+passed
+</td><td class="hide-on-small-only"></td></tr>
+</tbody>
+</table></div><div id="errors" class="col s12 brown lighten-5">
+<ul class="errorList collapsible popout" data-collapsible="expandable"></ul></div>
+</div>
+</main><footer class="page-footer brown lighten-4">
+<div class="footer-copyright brown lighten-1">
+<div class="container">
+Happy Reporting!
+<a class="white-text text-lighten-4 right" href="http://reportbuilder.rajatthareja.com">Generated by Report Builder</a>
+</div>
+</div>
+</footer><script type="text/javascript" src="https://cdn.rawgit.com/rajatthareja/ReportBuilder/v1.6/js/report.builder.min.js"></script></body>
+</html>

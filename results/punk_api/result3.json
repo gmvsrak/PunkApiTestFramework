@@ -1,9 +1,9 @@
 [
   {
-    "uri": "features/feature_files/punk_api/punk_api_pre_requisites.feature",
-    "id": "get-prerequisite-test-to-test-punk-api",
+    "uri": "features/feature_files/punk_api/punk_api_smoke.feature",
+    "id": "smoke-tests-to-test-punk-api",
     "keyword": "Feature",
-    "name": "Get Prerequisite Test to test Punk API",
+    "name": "Smoke Tests to test Punk API",
     "description": "",
     "line": 1,
     "elements": [
@@ -23,7 +23,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 248000
+              "duration": 272000
             }
           }
         ],
@@ -37,13 +37,13 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3000726000
+              "duration": 2000429000
             }
           }
         ]
       },
       {
-        "id": "get-prerequisite-test-to-test-punk-api;able-to-get-random-beer",
+        "id": "smoke-tests-to-test-punk-api;able-to-get-random-beer",
         "keyword": "Scenario",
         "name": "Able to get random beer",
         "description": "",
@@ -69,7 +69,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 626965000
+              "duration": 772306000
             }
           },
           {
@@ -84,7 +84,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2793000
+              "duration": 2182000
             }
           },
           {
@@ -96,7 +96,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 314000
+              "duration": 191000
             }
           },
           {
@@ -108,7 +108,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 629433000
+              "duration": 683877000
             }
           },
           {
@@ -123,7 +123,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5259000
+              "duration": 178000
             }
           },
           {
@@ -135,7 +135,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 248000
+              "duration": 204000
             }
           },
           {
@@ -147,7 +147,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 33000
+              "duration": 37000
             }
           }
         ],
@@ -158,7 +158,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 103000
+              "duration": 113000
             }
           }
         ]

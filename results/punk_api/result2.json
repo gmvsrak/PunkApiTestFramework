@@ -1,9 +1,9 @@
 [
   {
-    "uri": "features/feature_files/punk_api/punk_api_pre_requisites.feature",
-    "id": "get-prerequisite-test-to-test-punk-api",
+    "uri": "features/feature_files/punk_api/punk_api_smoke.feature",
+    "id": "smoke-tests-to-test-punk-api",
     "keyword": "Feature",
-    "name": "Get Prerequisite Test to test Punk API",
+    "name": "Smoke Tests to test Punk API",
     "description": "",
     "line": 1,
     "elements": [
@@ -23,7 +23,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 289000
+              "duration": 236000
             }
           }
         ],
@@ -37,13 +37,13 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2001102000
+              "duration": 2000298000
             }
           }
         ]
       },
       {
-        "id": "get-prerequisite-test-to-test-punk-api;able-to-get-single-beer",
+        "id": "smoke-tests-to-test-punk-api;able-to-get-single-beer",
         "keyword": "Scenario",
         "name": "Able to get single beer",
         "description": "",
@@ -69,7 +69,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 256205000
+              "duration": 500847000
             }
           },
           {
@@ -84,7 +84,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2774000
+              "duration": 7803000
             }
           },
           {
@@ -99,7 +99,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 403000
+              "duration": 486000
             }
           }
         ],
@@ -110,7 +110,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 153000
+              "duration": 150000
             }
           }
         ]

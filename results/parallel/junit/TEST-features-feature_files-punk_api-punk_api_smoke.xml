@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="0" errors="0" skipped="0" tests="1" time="4.516869" name="Smoke Tests to test Punk API">
+<testcase classname="Smoke Tests to test Punk API" name="Able to Access Punk API" time="4.516869">
+  <system-out>
+    <![CDATA[  #################################################################################################### 
+  URL - https://api.punkapi.com/v2/beers 
+  HEADERS - 
+  #################################################################################################### 
+]]>
+  </system-out>
+  <system-err>
+    <![CDATA[]]>
+  </system-err>
+</testcase>
+</testsuite>

@@ -38,6 +38,7 @@ To increase parallel thread count edit line 14 or 29 in Rakefile, current thread
 
 Reports can be found in below location
 
-    results/punk_api_feature_report.html
+    results/punk_api_regression_report.html
     
+    results/punk_api_smoke_report.html
 
